@@ -1,4 +1,4 @@
-iOS7AutoLayoutSamples
+iOSAutoLayoutSamples
 =====================
 
-iOS 7 and Xcode 5 changed Auto Layout many things!
+* Including iOS 7 Auto Layout Samples.
