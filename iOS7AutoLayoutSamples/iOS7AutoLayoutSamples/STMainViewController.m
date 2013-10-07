@@ -23,8 +23,8 @@ typedef enum {
     _STMenuItemIndexFirstLayout,
     _STMenuItemIndexSecondLayout,
     _STMenuItemIndexBasicLayout,
-    _STMenuItemIndexResizeLabel,
     _STMenuItemIndexCentering,
+    _STMenuItemIndexResizeLabel,
 } _STMenuItemIndex;
 
 @interface STMainViewController()
@@ -50,8 +50,8 @@ typedef enum {
     [_menuItems addObject:@"First Layout"];
     [_menuItems addObject:@"Second Layout"];
     [_menuItems addObject:@"Basic Layout"];
-    [_menuItems addObject:@"Resize Label"];
     [_menuItems addObject:@"Centering"];
+    [_menuItems addObject:@"Resize Label"];
 }
 
 - (void)didReceiveMemoryWarning

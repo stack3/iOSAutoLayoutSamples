@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B741F95217F6C4EB0018EA28 /* iOS7iOS7AutoLayoutSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS7AutoLayoutSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B741F95217F6C4EB0018EA28 /* iOS7AutoLayoutSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS7AutoLayoutSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B741F95517F6C4EB0018EA28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B741F95717F6C4EB0018EA28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B741F95917F6C4EB0018EA28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -151,12 +151,12 @@
 				B741F98A17F6C74D0018EA28 /* STBasicLayoutViewController.h */,
 				B741F98B17F6C74D0018EA28 /* STBasicLayoutViewController.m */,
 				B741F98C17F6C74D0018EA28 /* STBasicLayoutViewController.xib */,
-				B741F99517F6DB3C0018EA28 /* STResizeLabelViewController.h */,
-				B741F99617F6DB3C0018EA28 /* STResizeLabelViewController.m */,
-				B741F99717F6DB3C0018EA28 /* STResizeLabelViewController.xib */,
 				B741F99A17F6E9EA0018EA28 /* STCenteringViewController.h */,
 				B741F99B17F6E9EA0018EA28 /* STCenteringViewController.m */,
 				B741F99C17F6E9EA0018EA28 /* STCenteringViewController.xib */,
+				B741F99517F6DB3C0018EA28 /* STResizeLabelViewController.h */,
+				B741F99617F6DB3C0018EA28 /* STResizeLabelViewController.m */,
+				B741F99717F6DB3C0018EA28 /* STResizeLabelViewController.xib */,
 				B741F96D17F6C4EB0018EA28 /* Images.xcassets */,
 				B741F95C17F6C4EB0018EA28 /* Supporting Files */,
 			);

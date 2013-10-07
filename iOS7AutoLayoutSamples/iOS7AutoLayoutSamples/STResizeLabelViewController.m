@@ -24,6 +24,7 @@
     self = [super init];
     if (self) {
         self.title = @"Resize Label";
+        self.edgesForExtendedLayout = UIRectEdgeNone;
     }
     return self;
 }
