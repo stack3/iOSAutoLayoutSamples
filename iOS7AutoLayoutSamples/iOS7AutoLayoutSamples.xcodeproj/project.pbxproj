@@ -27,6 +27,8 @@
 		B741F99917F6DB3C0018EA28 /* STResizeLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B741F99717F6DB3C0018EA28 /* STResizeLabelViewController.xib */; };
 		B741F99D17F6E9EA0018EA28 /* STCenteringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B741F99B17F6E9EA0018EA28 /* STCenteringViewController.m */; };
 		B741F99E17F6E9EA0018EA28 /* STCenteringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B741F99C17F6E9EA0018EA28 /* STCenteringViewController.xib */; };
+		B74BD96C1809057200631AE9 /* STResizeHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74BD96A1809057200631AE9 /* STResizeHorizontalViewController.m */; };
+		B74BD96D1809057200631AE9 /* STResizeHorizontalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74BD96B1809057200631AE9 /* STResizeHorizontalViewController.xib */; };
 		B794151117FDB23A00276558 /* STFirstLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794150F17FDB23A00276558 /* STFirstLayoutViewController.m */; };
 		B794151217FDB23A00276558 /* STFirstLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B794151017FDB23A00276558 /* STFirstLayoutViewController.xib */; };
 		B794151617FDB66200276558 /* STSecondLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794151417FDB66200276558 /* STSecondLayoutViewController.m */; };
@@ -72,6 +74,9 @@
 		B741F99A17F6E9EA0018EA28 /* STCenteringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCenteringViewController.h; sourceTree = "<group>"; };
 		B741F99B17F6E9EA0018EA28 /* STCenteringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCenteringViewController.m; sourceTree = "<group>"; };
 		B741F99C17F6E9EA0018EA28 /* STCenteringViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCenteringViewController.xib; sourceTree = "<group>"; };
+		B74BD9691809057200631AE9 /* STResizeHorizontalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STResizeHorizontalViewController.h; sourceTree = "<group>"; };
+		B74BD96A1809057200631AE9 /* STResizeHorizontalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STResizeHorizontalViewController.m; sourceTree = "<group>"; };
+		B74BD96B1809057200631AE9 /* STResizeHorizontalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STResizeHorizontalViewController.xib; sourceTree = "<group>"; };
 		B794150E17FDB23A00276558 /* STFirstLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFirstLayoutViewController.h; sourceTree = "<group>"; };
 		B794150F17FDB23A00276558 /* STFirstLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFirstLayoutViewController.m; sourceTree = "<group>"; };
 		B794151017FDB23A00276558 /* STFirstLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFirstLayoutViewController.xib; sourceTree = "<group>"; };
@@ -157,6 +162,9 @@
 				B741F99517F6DB3C0018EA28 /* STResizeLabelViewController.h */,
 				B741F99617F6DB3C0018EA28 /* STResizeLabelViewController.m */,
 				B741F99717F6DB3C0018EA28 /* STResizeLabelViewController.xib */,
+				B74BD9691809057200631AE9 /* STResizeHorizontalViewController.h */,
+				B74BD96A1809057200631AE9 /* STResizeHorizontalViewController.m */,
+				B74BD96B1809057200631AE9 /* STResizeHorizontalViewController.xib */,
 				B741F96D17F6C4EB0018EA28 /* Images.xcassets */,
 				B741F95C17F6C4EB0018EA28 /* Supporting Files */,
 			);
@@ -270,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B794151217FDB23A00276558 /* STFirstLayoutViewController.xib in Resources */,
+				B74BD96D1809057200631AE9 /* STResizeHorizontalViewController.xib in Resources */,
 				B741F96E17F6C4EB0018EA28 /* Images.xcassets in Resources */,
 				B794151717FDB66200276558 /* STSecondLayoutViewController.xib in Resources */,
 				B741F99E17F6E9EA0018EA28 /* STCenteringViewController.xib in Resources */,
@@ -298,6 +307,7 @@
 				B741F99817F6DB3C0018EA28 /* STResizeLabelViewController.m in Sources */,
 				B794151617FDB66200276558 /* STSecondLayoutViewController.m in Sources */,
 				B741F96C17F6C4EB0018EA28 /* STMainViewController.m in Sources */,
+				B74BD96C1809057200631AE9 /* STResizeHorizontalViewController.m in Sources */,
 				B741F96217F6C4EB0018EA28 /* main.m in Sources */,
 				B741F99D17F6E9EA0018EA28 /* STCenteringViewController.m in Sources */,
 				B741F98D17F6C74D0018EA28 /* STBasicLayoutViewController.m in Sources */,
