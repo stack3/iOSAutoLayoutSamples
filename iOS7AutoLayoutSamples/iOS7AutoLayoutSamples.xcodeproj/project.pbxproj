@@ -31,6 +31,8 @@
 		B74BD96D1809057200631AE9 /* STResizeHorizontalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74BD96B1809057200631AE9 /* STResizeHorizontalViewController.xib */; };
 		B74BD98A180AB24000631AE9 /* STResizeVerticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74BD988180AB24000631AE9 /* STResizeVerticalViewController.m */; };
 		B74BD98B180AB24000631AE9 /* STResizeVerticalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74BD989180AB24000631AE9 /* STResizeVerticalViewController.xib */; };
+		B765D42A181CA4FB0058B933 /* STFillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D428181CA4FB0058B933 /* STFillViewController.m */; };
+		B765D42B181CA4FB0058B933 /* STFillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B765D429181CA4FB0058B933 /* STFillViewController.xib */; };
 		B794151117FDB23A00276558 /* STFirstLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794150F17FDB23A00276558 /* STFirstLayoutViewController.m */; };
 		B794151217FDB23A00276558 /* STFirstLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B794151017FDB23A00276558 /* STFirstLayoutViewController.xib */; };
 		B794151617FDB66200276558 /* STSecondLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794151417FDB66200276558 /* STSecondLayoutViewController.m */; };
@@ -82,6 +84,9 @@
 		B74BD987180AB24000631AE9 /* STResizeVerticalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STResizeVerticalViewController.h; sourceTree = "<group>"; };
 		B74BD988180AB24000631AE9 /* STResizeVerticalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STResizeVerticalViewController.m; sourceTree = "<group>"; };
 		B74BD989180AB24000631AE9 /* STResizeVerticalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STResizeVerticalViewController.xib; sourceTree = "<group>"; };
+		B765D427181CA4FB0058B933 /* STFillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFillViewController.h; sourceTree = "<group>"; };
+		B765D428181CA4FB0058B933 /* STFillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFillViewController.m; sourceTree = "<group>"; };
+		B765D429181CA4FB0058B933 /* STFillViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFillViewController.xib; sourceTree = "<group>"; };
 		B794150E17FDB23A00276558 /* STFirstLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFirstLayoutViewController.h; sourceTree = "<group>"; };
 		B794150F17FDB23A00276558 /* STFirstLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFirstLayoutViewController.m; sourceTree = "<group>"; };
 		B794151017FDB23A00276558 /* STFirstLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFirstLayoutViewController.xib; sourceTree = "<group>"; };
@@ -173,6 +178,9 @@
 				B74BD987180AB24000631AE9 /* STResizeVerticalViewController.h */,
 				B74BD988180AB24000631AE9 /* STResizeVerticalViewController.m */,
 				B74BD989180AB24000631AE9 /* STResizeVerticalViewController.xib */,
+				B765D427181CA4FB0058B933 /* STFillViewController.h */,
+				B765D428181CA4FB0058B933 /* STFillViewController.m */,
+				B765D429181CA4FB0058B933 /* STFillViewController.xib */,
 				B741F96D17F6C4EB0018EA28 /* Images.xcassets */,
 				B741F95C17F6C4EB0018EA28 /* Supporting Files */,
 			);
@@ -287,6 +295,7 @@
 			files = (
 				B794151217FDB23A00276558 /* STFirstLayoutViewController.xib in Resources */,
 				B74BD96D1809057200631AE9 /* STResizeHorizontalViewController.xib in Resources */,
+				B765D42B181CA4FB0058B933 /* STFillViewController.xib in Resources */,
 				B741F96E17F6C4EB0018EA28 /* Images.xcassets in Resources */,
 				B74BD98B180AB24000631AE9 /* STResizeVerticalViewController.xib in Resources */,
 				B794151717FDB66200276558 /* STSecondLayoutViewController.xib in Resources */,
@@ -323,6 +332,7 @@
 				B741F98D17F6C74D0018EA28 /* STBasicLayoutViewController.m in Sources */,
 				B741F96617F6C4EB0018EA28 /* STAppDelegate.m in Sources */,
 				B794151117FDB23A00276558 /* STFirstLayoutViewController.m in Sources */,
+				B765D42A181CA4FB0058B933 /* STFillViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

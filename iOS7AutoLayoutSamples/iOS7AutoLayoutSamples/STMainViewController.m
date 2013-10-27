@@ -14,6 +14,7 @@
 #import "STCenteringViewController.h"
 #import "STResizeHorizontalViewController.h"
 #import "STResizeVerticalViewController.h"
+#import "STFillViewController.h"
 
 @interface STMainViewController ()
 
@@ -29,6 +30,7 @@ typedef enum {
     _STMenuItemIndexResizeLabel,
     _STMenuItemIndexResizeHorizontal,
     _STMenuItemIndexResizeVertical,
+    _STMenuItemIndexFill,
 } _STMenuItemIndex;
 
 @interface STMainViewController()
@@ -58,6 +60,7 @@ typedef enum {
     [_menuItems addObject:@"Resize Label"];
     [_menuItems addObject:@"Resize Horizontal"];
     [_menuItems addObject:@"Resize Vertical"];
+    [_menuItems addObject:@"Fill"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,6 +113,9 @@ typedef enum {
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexResizeVertical) {
         STResizeVerticalViewController *con = [[STResizeVerticalViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    } else if (indexPath.row == _STMenuItemIndexFill) {
+        STFillViewController *con = [[STFillViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 }
