@@ -33,6 +33,8 @@
 		B74BD98B180AB24000631AE9 /* STResizeVerticalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74BD989180AB24000631AE9 /* STResizeVerticalViewController.xib */; };
 		B765D42A181CA4FB0058B933 /* STFillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D428181CA4FB0058B933 /* STFillViewController.m */; };
 		B765D42B181CA4FB0058B933 /* STFillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B765D429181CA4FB0058B933 /* STFillViewController.xib */; };
+		B765F84C181CC21300994A54 /* STHideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B765F84A181CC21300994A54 /* STHideViewController.m */; };
+		B765F84D181CC21300994A54 /* STHideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B765F84B181CC21300994A54 /* STHideViewController.xib */; };
 		B794151117FDB23A00276558 /* STFirstLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794150F17FDB23A00276558 /* STFirstLayoutViewController.m */; };
 		B794151217FDB23A00276558 /* STFirstLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B794151017FDB23A00276558 /* STFirstLayoutViewController.xib */; };
 		B794151617FDB66200276558 /* STSecondLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794151417FDB66200276558 /* STSecondLayoutViewController.m */; };
@@ -87,6 +89,9 @@
 		B765D427181CA4FB0058B933 /* STFillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFillViewController.h; sourceTree = "<group>"; };
 		B765D428181CA4FB0058B933 /* STFillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFillViewController.m; sourceTree = "<group>"; };
 		B765D429181CA4FB0058B933 /* STFillViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFillViewController.xib; sourceTree = "<group>"; };
+		B765F849181CC21300994A54 /* STHideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHideViewController.h; sourceTree = "<group>"; };
+		B765F84A181CC21300994A54 /* STHideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHideViewController.m; sourceTree = "<group>"; };
+		B765F84B181CC21300994A54 /* STHideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STHideViewController.xib; sourceTree = "<group>"; };
 		B794150E17FDB23A00276558 /* STFirstLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFirstLayoutViewController.h; sourceTree = "<group>"; };
 		B794150F17FDB23A00276558 /* STFirstLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFirstLayoutViewController.m; sourceTree = "<group>"; };
 		B794151017FDB23A00276558 /* STFirstLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFirstLayoutViewController.xib; sourceTree = "<group>"; };
@@ -181,6 +186,9 @@
 				B765D427181CA4FB0058B933 /* STFillViewController.h */,
 				B765D428181CA4FB0058B933 /* STFillViewController.m */,
 				B765D429181CA4FB0058B933 /* STFillViewController.xib */,
+				B765F849181CC21300994A54 /* STHideViewController.h */,
+				B765F84A181CC21300994A54 /* STHideViewController.m */,
+				B765F84B181CC21300994A54 /* STHideViewController.xib */,
 				B741F96D17F6C4EB0018EA28 /* Images.xcassets */,
 				B741F95C17F6C4EB0018EA28 /* Supporting Files */,
 			);
@@ -294,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B794151217FDB23A00276558 /* STFirstLayoutViewController.xib in Resources */,
+				B765F84D181CC21300994A54 /* STHideViewController.xib in Resources */,
 				B74BD96D1809057200631AE9 /* STResizeHorizontalViewController.xib in Resources */,
 				B765D42B181CA4FB0058B933 /* STFillViewController.xib in Resources */,
 				B741F96E17F6C4EB0018EA28 /* Images.xcassets in Resources */,
@@ -331,6 +340,7 @@
 				B741F99D17F6E9EA0018EA28 /* STCenteringViewController.m in Sources */,
 				B741F98D17F6C74D0018EA28 /* STBasicLayoutViewController.m in Sources */,
 				B741F96617F6C4EB0018EA28 /* STAppDelegate.m in Sources */,
+				B765F84C181CC21300994A54 /* STHideViewController.m in Sources */,
 				B794151117FDB23A00276558 /* STFirstLayoutViewController.m in Sources */,
 				B765D42A181CA4FB0058B933 /* STFillViewController.m in Sources */,
 			);

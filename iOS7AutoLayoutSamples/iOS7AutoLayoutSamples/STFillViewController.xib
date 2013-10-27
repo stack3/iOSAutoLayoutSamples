@@ -30,7 +30,6 @@
                 <constraint firstItem="OKK-Mv-DiL" firstAttribute="top" secondItem="1" secondAttribute="top" id="TVP-8z-nwO"/>
                 <constraint firstAttribute="bottom" secondItem="OKK-Mv-DiL" secondAttribute="bottom" id="lEY-iS-1vg"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
