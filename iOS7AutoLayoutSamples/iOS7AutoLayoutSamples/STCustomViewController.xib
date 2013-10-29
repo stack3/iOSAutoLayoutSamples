@@ -21,7 +21,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="BcS-a9-tME"/>
-                        <constraint firstAttribute="height" priority="393" constant="30" id="bIk-xN-eBW"/>
+                        <constraint firstAttribute="height" priority="1" constant="30" id="bIk-xN-eBW"/>
                     </constraints>
                 </view>
             </subviews>

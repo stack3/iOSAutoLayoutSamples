@@ -14,7 +14,9 @@
 {
     NSString *nibName = NSStringFromClass([self class]);
     UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-    return [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+    UIViewController *con = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+    
+    return con;
 }
 
 @end

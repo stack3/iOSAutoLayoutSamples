@@ -14,7 +14,9 @@
 {
     NSString *nibName = NSStringFromClass([self class]);
     UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-    return [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+    UIView *view = (UIView *)[[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+    [nib instantiateWithOwner:view options:nil];
+    return view;
 }
 
 @end

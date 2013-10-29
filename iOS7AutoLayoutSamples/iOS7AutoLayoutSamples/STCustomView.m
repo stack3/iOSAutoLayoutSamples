@@ -13,12 +13,11 @@
 - (void)awakeFromNib
 {
     self.backgroundColor = [UIColor redColor];
-    _height = 150;
 }
 
 - (CGSize)intrinsicContentSize
 {
-    return CGSizeMake(300, _height);
+    return CGSizeMake(UIViewNoIntrinsicMetric, 100);
 }
 
 @end

@@ -18,7 +18,8 @@
 #import "STHideViewController.h"
 #import "STHide2ViewController.h"
 #import "STCustomViewController.h"
-#import "STResizeCustomViewController.h"
+#import "STFlexibleCustomViewController.h"
+#import "STFlexibleTableViewCellViewController.h"
 
 @interface STMainViewController ()
 
@@ -38,7 +39,8 @@ typedef enum {
     _STMenuItemIndexHide,
     _STMenuItemIndexHide2,
     _STMenuItemIndexCustomView,
-    _STMenuItemIndexResizeCustomView,
+    _STMenuItemIndexFlexibleCustomView,
+    _STMenuItemIndexFlexibleTableViewCell,
 } _STMenuItemIndex;
 
 @interface STMainViewController()
@@ -49,6 +51,13 @@ typedef enum {
 @end
 
 @implementation STMainViewController
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    NSLog(@"%@", self.nibName);
+}
 
 - (void)viewDidLoad
 {
@@ -71,8 +80,9 @@ typedef enum {
     [_menuItems addObject:@"Fill"];
     [_menuItems addObject:@"Hide"];
     [_menuItems addObject:@"Hide2"];
-    [_menuItems addObject:@"Custom View"];
-    [_menuItems addObject:@"Flexible Custom View"];
+    [_menuItems addObject:@"CustomView"];
+    [_menuItems addObject:@"Flexible CustomView"];
+    [_menuItems addObject:@"Flexible TableViewCell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -138,8 +148,12 @@ typedef enum {
     } else if (indexPath.row == _STMenuItemIndexCustomView) {
         STCustomViewController *con = [[STCustomViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
-    } else if (indexPath.row == _STMenuItemIndexResizeCustomView) {
-        STResizeCustomViewController *con = [[STResizeCustomViewController alloc] init];
+    } else if (indexPath.row == _STMenuItemIndexFlexibleCustomView) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFlexibleCustomViewController" bundle:nil];
+        STFlexibleCustomViewController *con = [sb instantiateInitialViewController];
+        [self.navigationController pushViewController:con animated:YES];
+    } else if (indexPath.row == _STMenuItemIndexFlexibleTableViewCell) {
+        STFlexibleTableViewCellViewController *con = [STFlexibleTableViewCellViewController st_loadFromNib];
         [self.navigationController pushViewController:con animated:YES];
     }
 }
