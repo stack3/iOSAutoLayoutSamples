@@ -17,6 +17,8 @@
 #import "STFillViewController.h"
 #import "STHideViewController.h"
 #import "STHide2ViewController.h"
+#import "STCustomViewController.h"
+#import "STResizeCustomViewController.h"
 
 @interface STMainViewController ()
 
@@ -35,6 +37,8 @@ typedef enum {
     _STMenuItemIndexFill,
     _STMenuItemIndexHide,
     _STMenuItemIndexHide2,
+    _STMenuItemIndexCustomView,
+    _STMenuItemIndexResizeCustomView,
 } _STMenuItemIndex;
 
 @interface STMainViewController()
@@ -67,6 +71,8 @@ typedef enum {
     [_menuItems addObject:@"Fill"];
     [_menuItems addObject:@"Hide"];
     [_menuItems addObject:@"Hide2"];
+    [_menuItems addObject:@"Custom View"];
+    [_menuItems addObject:@"Flexible Custom View"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -128,6 +134,12 @@ typedef enum {
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexHide2) {
         STHide2ViewController *con = [[STHide2ViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    } else if (indexPath.row == _STMenuItemIndexCustomView) {
+        STCustomViewController *con = [[STCustomViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    } else if (indexPath.row == _STMenuItemIndexResizeCustomView) {
+        STResizeCustomViewController *con = [[STResizeCustomViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 }
