@@ -23,10 +23,10 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="McB-y6-kFc" firstAttribute="top" secondItem="c9D-09-52U" secondAttribute="bottom" id="Jqt-mj-a1o"/>
-                    <constraint firstAttribute="trailing" secondItem="c9D-09-52U" secondAttribute="trailing" id="iiK-u4-cTE"/>
-                    <constraint firstItem="c9D-09-52U" firstAttribute="top" secondItem="r2i-vp-dl3" secondAttribute="top" id="yGL-Zg-4zr"/>
-                    <constraint firstItem="c9D-09-52U" firstAttribute="leading" secondItem="r2i-vp-dl3" secondAttribute="leading" id="zZC-W7-rnb"/>
+                    <constraint firstAttribute="trailing" secondItem="c9D-09-52U" secondAttribute="trailing" id="2I2-Ou-UKa"/>
+                    <constraint firstItem="c9D-09-52U" firstAttribute="leading" secondItem="r2i-vp-dl3" secondAttribute="leading" id="Y42-Py-zlw"/>
+                    <constraint firstItem="McB-y6-kFc" firstAttribute="top" secondItem="c9D-09-52U" secondAttribute="bottom" id="n1v-1U-XIL"/>
+                    <constraint firstItem="c9D-09-52U" firstAttribute="top" secondItem="r2i-vp-dl3" secondAttribute="top" id="oPX-p0-AdM"/>
                 </constraints>
             </view>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

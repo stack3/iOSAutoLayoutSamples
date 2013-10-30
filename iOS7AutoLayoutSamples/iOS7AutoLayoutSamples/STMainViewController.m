@@ -18,7 +18,7 @@
 #import "STHideViewController.h"
 #import "STHide2ViewController.h"
 #import "STCustomViewController.h"
-#import "STResizeCustomViewController.h"
+#import "STFlexibleCustomViewController.h"
 #import "STFlexibleTableViewCellViewController.h"
 
 @interface STMainViewController ()
@@ -39,7 +39,7 @@ typedef enum {
     _STMenuItemIndexHide,
     _STMenuItemIndexHide2,
     _STMenuItemIndexCustomView,
-    _STMenuItemIndexResizeCustomView,
+    _STMenuItemIndexFlexibleCustomView,
     _STMenuItemIndexFlexibleTableViewCell,
 } _STMenuItemIndex;
 
@@ -51,6 +51,13 @@ typedef enum {
 @end
 
 @implementation STMainViewController
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    NSLog(@"%@", self.nibName);
+}
 
 - (void)viewDidLoad
 {
@@ -141,8 +148,9 @@ typedef enum {
     } else if (indexPath.row == _STMenuItemIndexCustomView) {
         STCustomViewController *con = [[STCustomViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
-    } else if (indexPath.row == _STMenuItemIndexResizeCustomView) {
-        STResizeCustomViewController *con = [STResizeCustomViewController st_loadFromNib];
+    } else if (indexPath.row == _STMenuItemIndexFlexibleCustomView) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFlexibleCustomViewController" bundle:nil];
+        STFlexibleCustomViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexFlexibleTableViewCell) {
         STFlexibleTableViewCellViewController *con = [STFlexibleTableViewCellViewController st_loadFromNib];

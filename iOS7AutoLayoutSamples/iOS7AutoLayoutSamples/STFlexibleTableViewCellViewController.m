@@ -8,7 +8,7 @@
 
 #import "STFlexibleTableViewCellViewController.h"
 
-@interface STFlexibleTableViewCellViewController ()
+@interface STFlexibleTableViewCellViewController () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -18,18 +18,34 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    UINib *nib = [UINib nibWithNibName:@"STFlexibleTableViewCell" bundle:nil];
+    [_tableView registerNib:nib forCellReuseIdentifier:@"CellId"];
+    _tableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [_tableView dequeueReusableCellWithIdentifier:@"CellId"];
 }
 
 @end
