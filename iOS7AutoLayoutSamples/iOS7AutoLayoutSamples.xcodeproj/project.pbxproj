@@ -21,7 +21,6 @@
 		B741F97F17F6C4EB0018EA28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B741F97D17F6C4EB0018EA28 /* InfoPlist.strings */; };
 		B741F98117F6C4EB0018EA28 /* iOS7AutoLayoutSamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B741F98017F6C4EB0018EA28 /* iOS7AutoLayoutSamplesTests.m */; };
 		B741F98D17F6C74D0018EA28 /* STBasicLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B741F98B17F6C74D0018EA28 /* STBasicLayoutViewController.m */; };
-		B741F98E17F6C74D0018EA28 /* STBasicLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B741F98C17F6C74D0018EA28 /* STBasicLayoutViewController.xib */; };
 		B741F99217F6CAD80018EA28 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B741F99117F6CAD80018EA28 /* main.storyboard */; };
 		B741F99817F6DB3C0018EA28 /* STResizeLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B741F99617F6DB3C0018EA28 /* STResizeLabelViewController.m */; };
 		B741F99917F6DB3C0018EA28 /* STResizeLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B741F99717F6DB3C0018EA28 /* STResizeLabelViewController.xib */; };
@@ -54,6 +53,7 @@
 		B7F99795181FF9D000860B29 /* STFlexibleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F99794181FF9D000860B29 /* STFlexibleTableViewCell.m */; };
 		B7F99797181FFA1800860B29 /* STFlexibleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F99796181FFA1800860B29 /* STFlexibleTableViewCell.xib */; };
 		B7F99799182014C000860B29 /* STFlexibleCustomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F99798182014C000860B29 /* STFlexibleCustomViewController.storyboard */; };
+		B7F9979D1820EE1100860B29 /* STBasicLayoutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F9979C1820EE1100860B29 /* STBasicLayoutViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +87,6 @@
 		B741F98017F6C4EB0018EA28 /* iOS7AutoLayoutSamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS7AutoLayoutSamplesTests.m; sourceTree = "<group>"; };
 		B741F98A17F6C74D0018EA28 /* STBasicLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBasicLayoutViewController.h; sourceTree = "<group>"; };
 		B741F98B17F6C74D0018EA28 /* STBasicLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBasicLayoutViewController.m; sourceTree = "<group>"; };
-		B741F98C17F6C74D0018EA28 /* STBasicLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STBasicLayoutViewController.xib; sourceTree = "<group>"; };
 		B741F99117F6CAD80018EA28 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		B741F99517F6DB3C0018EA28 /* STResizeLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STResizeLabelViewController.h; sourceTree = "<group>"; };
 		B741F99617F6DB3C0018EA28 /* STResizeLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STResizeLabelViewController.m; sourceTree = "<group>"; };
@@ -137,6 +136,7 @@
 		B7F99794181FF9D000860B29 /* STFlexibleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFlexibleTableViewCell.m; sourceTree = "<group>"; };
 		B7F99796181FFA1800860B29 /* STFlexibleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFlexibleTableViewCell.xib; sourceTree = "<group>"; };
 		B7F99798182014C000860B29 /* STFlexibleCustomViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STFlexibleCustomViewController.storyboard; sourceTree = "<group>"; };
+		B7F9979C1820EE1100860B29 /* STBasicLayoutViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STBasicLayoutViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +213,7 @@
 				B794151517FDB66200276558 /* STSecondLayoutViewController.xib */,
 				B741F98A17F6C74D0018EA28 /* STBasicLayoutViewController.h */,
 				B741F98B17F6C74D0018EA28 /* STBasicLayoutViewController.m */,
-				B741F98C17F6C74D0018EA28 /* STBasicLayoutViewController.xib */,
+				B7F9979C1820EE1100860B29 /* STBasicLayoutViewController.storyboard */,
 				B741F99A17F6E9EA0018EA28 /* STCenteringViewController.h */,
 				B741F99B17F6E9EA0018EA28 /* STCenteringViewController.m */,
 				B741F99C17F6E9EA0018EA28 /* STCenteringViewController.xib */,
@@ -376,11 +376,11 @@
 				B741F99E17F6E9EA0018EA28 /* STCenteringViewController.xib in Resources */,
 				B7F9978F181FF05A00860B29 /* STFlexibleTableViewCellViewController.xib in Resources */,
 				B741F96017F6C4EB0018EA28 /* InfoPlist.strings in Resources */,
-				B741F98E17F6C74D0018EA28 /* STBasicLayoutViewController.xib in Resources */,
 				B765F852181CC91100994A54 /* STHide2ViewController.xib in Resources */,
 				B741F99917F6DB3C0018EA28 /* STResizeLabelViewController.xib in Resources */,
 				B765F857181CCF3B00994A54 /* STCustomViewController.xib in Resources */,
 				B741F99217F6CAD80018EA28 /* main.storyboard in Resources */,
+				B7F9979D1820EE1100860B29 /* STBasicLayoutViewController.storyboard in Resources */,
 				B7F99797181FFA1800860B29 /* STFlexibleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

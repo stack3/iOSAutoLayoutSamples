@@ -122,7 +122,8 @@ typedef enum {
         STSecondLayoutViewController *con = [[STSecondLayoutViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexBasicLayout) {
-        STBasicLayoutViewController *con = [[STBasicLayoutViewController alloc] init];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STBasicLayoutViewController" bundle:nil];
+        STBasicLayoutViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexResizeLabel) {
         STResizeLabelViewController *con = [[STResizeLabelViewController alloc] init];
