@@ -7,8 +7,6 @@
 //
 
 #import "STMainViewController.h"
-#import "STFirstLayoutViewController.h"
-#import "STSecondLayoutViewController.h"
 #import "STBasicLayoutViewController.h"
 #import "STResizeLabelViewController.h"
 #import "STCenteringViewController.h"
@@ -28,8 +26,6 @@
 #define _STCellId @"CellId"
 
 typedef enum {
-    _STMenuItemIndexFirstLayout,
-    _STMenuItemIndexSecondLayout,
     _STMenuItemIndexBasicLayout,
     _STMenuItemIndexCentering,
     _STMenuItemIndexResizeLabel,
@@ -70,8 +66,6 @@ typedef enum {
     _tableView.delegate = self;
     
     _menuItems = [NSMutableArray arrayWithCapacity:10];
-    [_menuItems addObject:@"First Layout"];
-    [_menuItems addObject:@"Second Layout"];
     [_menuItems addObject:@"Basic Layout"];
     [_menuItems addObject:@"Centering"];
     [_menuItems addObject:@"Resize Label"];
@@ -115,13 +109,7 @@ typedef enum {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == _STMenuItemIndexFirstLayout) {
-        STFirstLayoutViewController *con = [[STFirstLayoutViewController alloc] init];
-        [self.navigationController pushViewController:con animated:YES];
-    } else if (indexPath.row == _STMenuItemIndexSecondLayout) {
-        STSecondLayoutViewController *con = [[STSecondLayoutViewController alloc] init];
-        [self.navigationController pushViewController:con animated:YES];
-    } else if (indexPath.row == _STMenuItemIndexBasicLayout) {
+    if (indexPath.row == _STMenuItemIndexBasicLayout) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STBasicLayoutViewController" bundle:nil];
         STBasicLayoutViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
