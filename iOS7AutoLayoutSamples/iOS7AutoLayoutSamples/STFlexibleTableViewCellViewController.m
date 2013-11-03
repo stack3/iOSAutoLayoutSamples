@@ -2,7 +2,7 @@
 //  STFlexibleTableViewCellViewController.m
 //  iOS7AutoLayoutSamples
 //
-//  Created by MIYAMOTO, Hideaki on 2013/10/29.
+//  Created by EIMEI on 2013/10/29.
 //  Copyright (c) 2013年 stack3. All rights reserved.
 //
 
@@ -16,14 +16,11 @@
 
 @implementation STFlexibleTableViewCellViewController
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = @"Flexible TableViewCell";
 
     UINib *nib = [UINib nibWithNibName:@"STFlexibleTableViewCell" bundle:nil];
     [_tableView registerNib:nib forCellReuseIdentifier:@"CellId"];

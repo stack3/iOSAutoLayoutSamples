@@ -10,29 +10,17 @@
 
 @implementation STCenteringViewController
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        self.title = @"Centering";
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self.title = @"Centering";
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
 }
 
 @end

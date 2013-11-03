@@ -14,20 +14,11 @@
 
 @implementation STFillViewController
 
-- (id)init
-{
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.title = @"Fill";
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.title = @"Fill";
 }
 
 - (void)didReceiveMemoryWarning

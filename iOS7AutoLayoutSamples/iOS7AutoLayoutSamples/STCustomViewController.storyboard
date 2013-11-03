@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="VOb-Ho-y2O">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Custom View Controller-->
+        <scene sceneID="g2i-zh-APR">
+            <objects>
+                <viewController id="VOb-Ho-y2O" customClass="STCustomViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YN1-jH-ltm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Haq-f5-2Xb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Exp-kV-bza">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trG-f1-Wua" customClass="STCustomView">
+                                <rect key="frame" x="20" y="40" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="1PM-iI-Vbm"/>
+                                    <constraint firstAttribute="height" priority="1" constant="30" id="YnR-ob-VgS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="trG-f1-Wua" secondAttribute="trailing" constant="20" id="Ghd-Sn-muq"/>
+                            <constraint firstItem="trG-f1-Wua" firstAttribute="leading" secondItem="Exp-kV-bza" secondAttribute="leading" constant="20" id="U6c-cL-UX5"/>
+                            <constraint firstItem="trG-f1-Wua" firstAttribute="top" secondItem="YN1-jH-ltm" secondAttribute="bottom" constant="20" id="rQS-71-vXd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customView" destination="trG-f1-Wua" id="833-op-5n0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzh-V1-NX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="57"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

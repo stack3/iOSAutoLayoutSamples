@@ -16,20 +16,12 @@
 
 @implementation STResizeVerticalViewController
 
-- (id)init
-{
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.title = @"Resize Vertical";
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
+    self.title = @"Resize Vertical";
+    
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellId"];
     _tableView.dataSource = self;
 }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PSH-8s-NWz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Resize Label View Controller-->
+        <scene sceneID="RhP-QW-R85">
+            <objects>
+                <viewController id="PSH-8s-NWz" customClass="STResizeLabelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WhB-uC-iZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="ypb-sX-XA0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7zk-q5-3cZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="jJX-8A-Mp8">
+                                <rect key="frame" x="20" y="39" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b0-We-bqy">
+                                <rect key="frame" x="233" y="68" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Long Text">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLongTextButton1:" destination="PSH-8s-NWz" eventType="touchUpInside" id="7hy-Yw-Xyl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label2" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="38t-3i-IHO">
+                                <rect key="frame" x="20" y="211" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4V-nH-YJZ">
+                                <rect key="frame" x="233" y="240" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Long Text">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLongTextButton2:" destination="PSH-8s-NWz" eventType="touchUpInside" id="S1Q-9a-YKL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jJX-8A-Mp8" firstAttribute="top" secondItem="WhB-uC-iZC" secondAttribute="bottom" constant="19" id="9Xq-R9-Ua7"/>
+                            <constraint firstItem="jJX-8A-Mp8" firstAttribute="leading" secondItem="7zk-q5-3cZ" secondAttribute="leading" constant="20" id="Ivi-Zh-tfx"/>
+                            <constraint firstItem="3b0-We-bqy" firstAttribute="top" secondItem="jJX-8A-Mp8" secondAttribute="bottom" constant="8" id="ThE-TF-ZDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="3b0-We-bqy" secondAttribute="trailing" constant="20" id="lZ6-lU-hRR"/>
+                            <constraint firstAttribute="trailing" secondItem="jJX-8A-Mp8" secondAttribute="trailing" constant="20" id="m2w-et-WVi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="jJX-8A-Mp8" id="kNf-iD-aJF"/>
+                        <outlet property="label2" destination="38t-3i-IHO" id="YaW-93-dmL"/>
+                        <outlet property="longTextButton1" destination="3b0-We-bqy" id="uLp-jb-fCT"/>
+                        <outlet property="longTextButton2" destination="T4V-nH-YJZ" id="oSN-6z-mxx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlU-4e-I7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="71"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

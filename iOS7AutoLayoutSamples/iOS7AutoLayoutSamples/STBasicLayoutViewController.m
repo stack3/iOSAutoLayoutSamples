@@ -14,20 +14,11 @@
 
 @implementation STBasicLayoutViewController
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        self.title = @"Basic Layout";
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    self.title = @"Basic Layout";
 }
 
 - (void)didReceiveMemoryWarning

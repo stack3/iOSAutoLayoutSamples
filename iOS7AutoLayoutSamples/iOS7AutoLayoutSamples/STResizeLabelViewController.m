@@ -19,22 +19,11 @@
 
 @implementation STResizeLabelViewController
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        self.title = @"Resize Label";
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    [_longTextButton1 addTarget:self action:@selector(didTapLongTextButton1) forControlEvents:UIControlEventTouchUpInside];
-    [_longTextButton2 addTarget:self action:@selector(didTapLongTextButton2) forControlEvents:UIControlEventTouchUpInside];
+    self.title = @"Resize Label";
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,12 +34,12 @@
 
 #pragma mark - Button
 
-- (void)didTapLongTextButton1
+- (IBAction)didTapLongTextButton1:(id)sender
 {
     _label1.text = @"Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooon Text";
 }
 
-- (void)didTapLongTextButton2
+- (IBAction)didTapLongTextButton2:(id)sender
 {
     _label2.text = @"Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooon Text";
 }

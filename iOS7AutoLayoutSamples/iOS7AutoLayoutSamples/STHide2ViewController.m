@@ -18,20 +18,11 @@
 
 @implementation STHide2ViewController
 
-- (id)init
-{
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.title = @"Hide2";
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
+    self.title = @"Hide2";
     _label2.text = @"Label2\nLabel2\nLabel2";
 }
 

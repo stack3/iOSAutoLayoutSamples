@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="i1S-S5-4Ux">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Resize Horizontal View Controller-->
+        <scene sceneID="2Hu-bq-d07">
+            <objects>
+                <viewController id="i1S-S5-4Ux" customClass="STResizeHorizontalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bfV-iV-mlT"/>
+                        <viewControllerLayoutGuide type="bottom" id="b58-ah-kab"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eoh-YR-kF4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="onf-NV-d9g">
+                                <rect key="frame" x="20" y="40" width="224" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAD-Oi-ZZG">
+                                <rect key="frame" x="252" y="40" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0o-dT-Kvb">
+                                <rect key="frame" x="20" y="82" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8g-IX-FuT">
+                                <rect key="frame" x="74" y="78" width="226" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7w-in-vkD">
+                                <rect key="frame" x="233" y="116" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Long Text">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLongTextButton:" destination="i1S-S5-4Ux" eventType="touchUpInside" id="u80-Cf-kdv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="onf-NV-d9g" firstAttribute="top" secondItem="bfV-iV-mlT" secondAttribute="bottom" constant="20" id="0x0-CO-JPi"/>
+                            <constraint firstItem="KAD-Oi-ZZG" firstAttribute="leading" secondItem="onf-NV-d9g" secondAttribute="trailing" constant="8" id="1Gb-2t-0sJ"/>
+                            <constraint firstItem="J8g-IX-FuT" firstAttribute="leading" secondItem="p0o-dT-Kvb" secondAttribute="trailing" constant="8" id="2QL-O3-KHr"/>
+                            <constraint firstItem="U7w-in-vkD" firstAttribute="top" secondItem="J8g-IX-FuT" secondAttribute="bottom" constant="8" id="2lK-FM-RPH"/>
+                            <constraint firstAttribute="trailing" secondItem="KAD-Oi-ZZG" secondAttribute="trailing" constant="20" id="5uV-Fo-RZj"/>
+                            <constraint firstItem="J8g-IX-FuT" firstAttribute="top" secondItem="onf-NV-d9g" secondAttribute="bottom" constant="8" id="7eC-nl-kJi"/>
+                            <constraint firstAttribute="trailing" secondItem="J8g-IX-FuT" secondAttribute="trailing" constant="20" id="ACU-39-tYY"/>
+                            <constraint firstAttribute="trailing" secondItem="U7w-in-vkD" secondAttribute="trailing" constant="20" id="Bz6-pv-3ec"/>
+                            <constraint firstItem="KAD-Oi-ZZG" firstAttribute="top" secondItem="bfV-iV-mlT" secondAttribute="bottom" constant="20" id="J2e-ZV-peV"/>
+                            <constraint firstItem="onf-NV-d9g" firstAttribute="leading" secondItem="eoh-YR-kF4" secondAttribute="leading" constant="20" id="QPj-2F-XwH"/>
+                            <constraint firstItem="p0o-dT-Kvb" firstAttribute="leading" secondItem="eoh-YR-kF4" secondAttribute="leading" constant="20" id="al8-s4-FaJ"/>
+                            <constraint firstItem="J8g-IX-FuT" firstAttribute="top" secondItem="KAD-Oi-ZZG" secondAttribute="bottom" constant="8" id="bHM-5b-IZD"/>
+                            <constraint firstItem="p0o-dT-Kvb" firstAttribute="top" secondItem="onf-NV-d9g" secondAttribute="bottom" constant="12" id="fN9-Et-Vyd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="longTextButton" destination="U7w-in-vkD" id="Lny-sP-Cei"/>
+                        <outlet property="nameLabel" destination="p0o-dT-Kvb" id="KTq-Ss-QUV"/>
+                        <outlet property="nameTextField" destination="onf-NV-d9g" id="LUD-Du-CEp"/>
+                        <outlet property="searchButton" destination="KAD-Oi-ZZG" id="LNN-zf-8WL"/>
+                        <outlet property="searchTextField" destination="J8g-IX-FuT" id="mER-f7-mfv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ues-JZ-sOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="89"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

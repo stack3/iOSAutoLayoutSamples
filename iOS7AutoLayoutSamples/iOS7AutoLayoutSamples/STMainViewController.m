@@ -113,36 +113,45 @@ typedef enum {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STBasicLayoutViewController" bundle:nil];
         STBasicLayoutViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
-    } else if (indexPath.row == _STMenuItemIndexResizeLabel) {
-        STResizeLabelViewController *con = [[STResizeLabelViewController alloc] init];
-        [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexCentering) {
-        STCenteringViewController *con = [[STCenteringViewController alloc] init];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STCenteringViewController" bundle:nil];
+        STCenteringViewController *con = [sb instantiateInitialViewController];
+        [self.navigationController pushViewController:con animated:YES];
+    } else if (indexPath.row == _STMenuItemIndexResizeLabel) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STResizeLabelViewController" bundle:nil];
+        STCenteringViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexResizeHorizontal) {
-        STResizeHorizontalViewController *con = [[STResizeHorizontalViewController alloc] init];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STResizeHorizontalViewController" bundle:nil];
+        STResizeHorizontalViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexResizeVertical) {
-        STResizeVerticalViewController *con = [[STResizeVerticalViewController alloc] init];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STResizeVerticalViewController" bundle:nil];
+        STResizeVerticalViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexFill) {
-        STFillViewController *con = [[STFillViewController alloc] init];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFillViewController" bundle:nil];
+        STResizeVerticalViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexHide) {
-        STHideViewController *con = [[STHideViewController alloc] init];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STHideViewController" bundle:nil];
+        STResizeVerticalViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexHide2) {
-        STHide2ViewController *con = [[STHide2ViewController alloc] init];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STHide2ViewController" bundle:nil];
+        STResizeVerticalViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexCustomView) {
-        STCustomViewController *con = [[STCustomViewController alloc] init];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STCustomViewController" bundle:nil];
+        STCustomViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexFlexibleCustomView) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFlexibleCustomViewController" bundle:nil];
         STFlexibleCustomViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexFlexibleTableViewCell) {
-        STFlexibleTableViewCellViewController *con = [STFlexibleTableViewCellViewController st_loadFromNib];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFlexibleTableViewCellViewController" bundle:nil];
+        STFlexibleTableViewCellViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     }
 }

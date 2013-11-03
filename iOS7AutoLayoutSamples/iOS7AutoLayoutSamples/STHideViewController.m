@@ -18,19 +18,11 @@
 
 @implementation STHideViewController
 
-- (id)init
-{
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.title = @"Hide";
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self.title = @"Hide";
 }
 
 - (IBAction)didTapToggleHideLabel2Button:(id)sender
