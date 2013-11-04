@@ -6,20 +6,48 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="369" id="4fv-VI-lVT" customClass="STFlexibleTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="369"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="4fv-VI-lVT" customClass="STFlexibleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4fv-VI-lVT" id="Hh5-cZ-qrT">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="368"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp5-Ze-Lhp">
-                        <rect key="frame" x="139" y="20" width="42" height="21"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp5-Ze-Lhp">
+                        <rect key="frame" x="20" y="20" width="280" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFd-71-MbQ">
+                        <rect key="frame" x="20" y="49" width="280" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2La-h8-iM5">
+                        <rect key="frame" x="20" y="78" width="280" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="oFd-71-MbQ" firstAttribute="top" secondItem="Dp5-Ze-Lhp" secondAttribute="bottom" constant="8" id="6Bi-kh-5ps"/>
+                    <constraint firstAttribute="trailing" secondItem="Dp5-Ze-Lhp" secondAttribute="trailing" constant="20" id="6YQ-5p-GLI"/>
+                    <constraint firstAttribute="trailing" secondItem="oFd-71-MbQ" secondAttribute="trailing" constant="20" id="Fv6-eC-NNu"/>
+                    <constraint firstItem="oFd-71-MbQ" firstAttribute="leading" secondItem="Hh5-cZ-qrT" secondAttribute="leading" constant="20" id="NHv-mX-HKF"/>
+                    <constraint firstItem="2La-h8-iM5" firstAttribute="leading" secondItem="Hh5-cZ-qrT" secondAttribute="leading" constant="20" id="Pyf-ku-XDf"/>
+                    <constraint firstItem="Dp5-Ze-Lhp" firstAttribute="leading" secondItem="Hh5-cZ-qrT" secondAttribute="leading" constant="20" id="VaT-aH-CaH"/>
+                    <constraint firstItem="2La-h8-iM5" firstAttribute="top" secondItem="oFd-71-MbQ" secondAttribute="bottom" constant="8" id="bQ6-Vc-SpF"/>
+                    <constraint firstAttribute="bottom" secondItem="2La-h8-iM5" secondAttribute="bottom" constant="20" id="cam-l1-G9j"/>
+                    <constraint firstAttribute="trailing" secondItem="2La-h8-iM5" secondAttribute="trailing" constant="20" id="dVE-4p-U1T"/>
+                    <constraint firstItem="Dp5-Ze-Lhp" firstAttribute="top" secondItem="Hh5-cZ-qrT" secondAttribute="top" constant="20" id="zUh-uy-G9d"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="label1" destination="Dp5-Ze-Lhp" id="Jdk-sS-1UX"/>
