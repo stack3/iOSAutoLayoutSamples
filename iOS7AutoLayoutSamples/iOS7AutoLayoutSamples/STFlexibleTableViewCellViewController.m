@@ -31,15 +31,17 @@
     _tableView.delegate = self;
     
     _cellForHeight = [_tableView dequeueReusableCellWithIdentifier:@"CellForHeightId"];
-    _cellForHeight.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    _cellForHeight.hidden = YES;
-    [self.view addSubview:_cellForHeight];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+
 }
 
 #pragma mark - UITableViewDataSource
@@ -52,6 +54,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     STFlexibleTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"CellId" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell setLabelTextsWithIndexPath:indexPath];
     
     return cell;
@@ -60,6 +63,10 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     _cellForHeight.frame = _tableView.bounds;
+    
+    // This also work.
+    // _cellForHeight.frame = CGRectMake(0, 0, _tableView.bounds.size.width, 0);
+    
     [_cellForHeight setLabelTextsWithIndexPath:indexPath];
     
     [_cellForHeight.contentView setNeedsLayout];
