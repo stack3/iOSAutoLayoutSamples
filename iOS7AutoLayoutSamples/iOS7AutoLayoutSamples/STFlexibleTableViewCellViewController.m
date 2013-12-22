@@ -7,10 +7,12 @@
 //
 
 #import "STFlexibleTableViewCellViewController.h"
+#import "STFlexibleTableViewCell.h"
 
 @interface STFlexibleTableViewCellViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) STFlexibleTableViewCell *cellForHeight;
 
 @end
 
@@ -27,6 +29,11 @@
     [_tableView registerNib:nib forCellReuseIdentifier:@"CellForHeightId"];
     _tableView.dataSource = self;
     _tableView.delegate = self;
+    
+    _cellForHeight = [_tableView dequeueReusableCellWithIdentifier:@"CellForHeightId"];
+    _cellForHeight.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    _cellForHeight.hidden = YES;
+    [self.view addSubview:_cellForHeight];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,21 +46,26 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [_tableView dequeueReusableCellWithIdentifier:@"CellId"];
+    STFlexibleTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"CellId" forIndexPath:indexPath];
+    [cell setLabelTextsWithIndexPath:indexPath];
+    
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellForHeightId"];
-    [cell.contentView setNeedsLayout];
-    [cell.contentView layoutIfNeeded];
-    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    return height;
+    _cellForHeight.frame = _tableView.bounds;
+    [_cellForHeight setLabelTextsWithIndexPath:indexPath];
+    
+    [_cellForHeight.contentView setNeedsLayout];
+    [_cellForHeight.contentView layoutIfNeeded];
+    CGSize size = [_cellForHeight.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    return size.height;
 }
 
 @end

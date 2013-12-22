@@ -8,30 +8,29 @@
 
 #import "STFlexibleTableViewCell.h"
 
-@interface STFlexibleTableViewCell ()
-
-@property (weak, nonatomic) IBOutlet UILabel *label1;
-
-@end
-
 @implementation STFlexibleTableViewCell
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (void)setFrame:(CGRect)frame
 {
-    self = [super initWithCoder:aDecoder];
-    return self;
+    [super setFrame:frame];
+    
+    _label1.preferredMaxLayoutWidth = frame.size.width - 20*2;
+    _label2.preferredMaxLayoutWidth = frame.size.width - 20*2;
+    _label3.preferredMaxLayoutWidth = frame.size.width - 20*2;
+    [self setNeedsLayout];
 }
 
-- (id)awakeAfterUsingCoder:(NSCoder *)aDecoder
+- (void)setLabelTextsWithIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"awakeAfterUsingCoder");
-    self = [super awakeAfterUsingCoder:aDecoder];
-    return self;
-}
-
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
+    NSMutableString *string = [[NSMutableString alloc] initWithCapacity:100];
+    for (NSUInteger i = 0; i < indexPath.row + 1; i++) {
+        [string appendFormat:@"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"];
+    }
+    
+    _label1.text = string;
+    _label2.text = string;
+    _label3.text = string;
+    [self setNeedsLayout];
 }
 
 @end
