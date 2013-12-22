@@ -48,13 +48,6 @@ typedef enum {
 
 @implementation STMainViewController
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    
-    NSLog(@"%@", self.nibName);
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
