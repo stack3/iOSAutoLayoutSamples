@@ -10,6 +10,12 @@
 
 @implementation STFlexibleTableViewCell
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+}
+
 - (void)setFrame:(CGRect)frame
 {
     [super setFrame:frame];
@@ -21,8 +27,6 @@
     _label1.preferredMaxLayoutWidth = bounds.size.width - 20*2;
     _label2.preferredMaxLayoutWidth = bounds.size.width - 20*2;
     _label3.preferredMaxLayoutWidth = bounds.size.width - 20*2;
-
-    [self setNeedsLayout];
 }
 
 - (void)setLabelTextsWithIndexPath:(NSIndexPath *)indexPath
@@ -35,7 +39,6 @@
     _label1.text = string;
     _label2.text = string;
     _label3.text = string;
-    [self setNeedsLayout];
 }
 
 @end

@@ -9,6 +9,9 @@
 #import "STFlexibleTableViewCellViewController.h"
 #import "STFlexibleTableViewCell.h"
 
+#define _STCellId @"Cell"
+#define _STCellForHeightId @"CellForHeight"
+
 @interface STFlexibleTableViewCellViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -25,23 +28,12 @@
     self.title = @"Flexible TableViewCell";
 
     UINib *nib = [UINib nibWithNibName:@"STFlexibleTableViewCell" bundle:nil];
-    [_tableView registerNib:nib forCellReuseIdentifier:@"CellId"];
-    [_tableView registerNib:nib forCellReuseIdentifier:@"CellForHeightId"];
+    [_tableView registerNib:nib forCellReuseIdentifier:_STCellId];
+    [_tableView registerNib:nib forCellReuseIdentifier:_STCellForHeightId];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
-    _cellForHeight = [_tableView dequeueReusableCellWithIdentifier:@"CellForHeightId"];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{
-
+    _cellForHeight = [_tableView dequeueReusableCellWithIdentifier:_STCellForHeightId];
 }
 
 #pragma mark - UITableViewDataSource
@@ -53,8 +45,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    STFlexibleTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"CellId" forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    STFlexibleTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:_STCellId forIndexPath:indexPath];
     [cell setLabelTextsWithIndexPath:indexPath];
     
     return cell;
