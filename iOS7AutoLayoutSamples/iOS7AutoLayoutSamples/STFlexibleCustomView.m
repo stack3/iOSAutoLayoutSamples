@@ -39,21 +39,13 @@
     _label2.backgroundColor = [UIColor blueColor];
 }
 
-/* Not needed.
-- (CGSize)intrinsicContentSize
+- (void)layoutSubviews
 {
-    CGSize size = CGSizeMake(self.bounds.size.width, 10000);
-    
-    size = [self sizeThatFits:size];
-    return size;
-}
+    CGRect bounds = self.bounds;
+    _label1.preferredMaxLayoutWidth = bounds.size.width - 20*2;
+    _label2.preferredMaxLayoutWidth = bounds.size.width - 20*2;
 
-- (CGSize)sizeThatFits:(CGSize)size
-{
-    CGSize label1Size = [_label1 sizeThatFits:size];
-    CGSize label2Size = [_label2 sizeThatFits:size];
-    return CGSizeMake(size.width, label1Size.height + label2Size.height + 20*2 + 8);
+    [super layoutSubviews];
 }
-*/
 
 @end

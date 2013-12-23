@@ -26,8 +26,8 @@
 
 - (IBAction)didTapResize:(id)sender
 {
-    _customView.label1.text = @"Label1\nLabel1";
-    _customView.label2.text = @"Label2\nLabel2\nLabel2";
+    _customView.label1.text = @"12345678901234567890123456789012345678901234567890";
+    _customView.label2.text = @"1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
     [self.view setNeedsLayout];
 }
 
