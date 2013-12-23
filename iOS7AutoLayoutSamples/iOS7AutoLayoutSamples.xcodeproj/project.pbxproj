@@ -35,6 +35,8 @@
 		B742777C182746AA00128E85 /* STFlexibleTableViewCellViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B742777B182746AA00128E85 /* STFlexibleTableViewCellViewController.storyboard */; };
 		B74BD96C1809057200631AE9 /* STResizeHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74BD96A1809057200631AE9 /* STResizeHorizontalViewController.m */; };
 		B74BD98A180AB24000631AE9 /* STResizeVerticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74BD988180AB24000631AE9 /* STResizeVerticalViewController.m */; };
+		B74BED261868003000327A33 /* STCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74BED251868003000327A33 /* STCustomView.xib */; };
+		B74BED29186803DA00327A33 /* stack3.png in Resources */ = {isa = PBXBuildFile; fileRef = B74BED28186803DA00327A33 /* stack3.png */; };
 		B765D42A181CA4FB0058B933 /* STFillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D428181CA4FB0058B933 /* STFillViewController.m */; };
 		B765F84C181CC21300994A54 /* STHideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B765F84A181CC21300994A54 /* STHideViewController.m */; };
 		B765F851181CC91100994A54 /* STHide2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B765F84F181CC91100994A54 /* STHide2ViewController.m */; };
@@ -101,6 +103,8 @@
 		B74BD96A1809057200631AE9 /* STResizeHorizontalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STResizeHorizontalViewController.m; sourceTree = "<group>"; };
 		B74BD987180AB24000631AE9 /* STResizeVerticalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STResizeVerticalViewController.h; sourceTree = "<group>"; };
 		B74BD988180AB24000631AE9 /* STResizeVerticalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STResizeVerticalViewController.m; sourceTree = "<group>"; };
+		B74BED251868003000327A33 /* STCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCustomView.xib; sourceTree = "<group>"; };
+		B74BED28186803DA00327A33 /* stack3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stack3.png; sourceTree = "<group>"; };
 		B765D427181CA4FB0058B933 /* STFillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFillViewController.h; sourceTree = "<group>"; };
 		B765D428181CA4FB0058B933 /* STFillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFillViewController.m; sourceTree = "<group>"; };
 		B765F849181CC21300994A54 /* STHideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHideViewController.h; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 				B74277771827444800128E85 /* STCustomViewController.storyboard */,
 				B765F858181CCF4B00994A54 /* STCustomView.h */,
 				B765F859181CCF4B00994A54 /* STCustomView.m */,
+				B74BED251868003000327A33 /* STCustomView.xib */,
 				B7F9977C181FE6F100860B29 /* STFlexibleCustomViewController.h */,
 				B7F9977D181FE6F100860B29 /* STFlexibleCustomViewController.m */,
 				B7F99798182014C000860B29 /* STFlexibleCustomViewController.storyboard */,
@@ -237,6 +242,7 @@
 				B7F99794181FF9D000860B29 /* STFlexibleTableViewCell.m */,
 				B7F99796181FFA1800860B29 /* STFlexibleTableViewCell.xib */,
 				B741F96D17F6C4EB0018EA28 /* Images.xcassets */,
+				B74BED27186803DA00327A33 /* Resources */,
 				B741F95C17F6C4EB0018EA28 /* Supporting Files */,
 			);
 			path = iOS7AutoLayoutSamples;
@@ -269,6 +275,14 @@
 				B741F97D17F6C4EB0018EA28 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B74BED27186803DA00327A33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B74BED28186803DA00327A33 /* stack3.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74BED261868003000327A33 /* STCustomView.xib in Resources */,
 				B74277761827435D00128E85 /* STHide2ViewController.storyboard in Resources */,
 				B7F99799182014C000860B29 /* STFlexibleCustomViewController.storyboard in Resources */,
 				B74277781827444800128E85 /* STCustomViewController.storyboard in Resources */,
@@ -361,6 +376,7 @@
 				B742777C182746AA00128E85 /* STFlexibleTableViewCellViewController.storyboard in Resources */,
 				B74277741827429800128E85 /* STHideViewController.storyboard in Resources */,
 				B7F9979D1820EE1100860B29 /* STBasicLayoutViewController.storyboard in Resources */,
+				B74BED29186803DA00327A33 /* stack3.png in Resources */,
 				B742776A1826115F00128E85 /* STResizeLabelViewController.storyboard in Resources */,
 				B7F99797181FFA1800860B29 /* STFlexibleTableViewCell.xib in Resources */,
 				B74277721827421800128E85 /* STFillViewController.storyboard in Resources */,

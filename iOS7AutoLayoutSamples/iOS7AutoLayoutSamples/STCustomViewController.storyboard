@@ -17,12 +17,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trG-f1-Wua" customClass="STCustomView">
-                                <rect key="frame" x="20" y="40" width="280" height="30"/>
+                                <rect key="frame" x="20" y="40" width="280" height="10"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="1PM-iI-Vbm"/>
-                                    <constraint firstAttribute="height" priority="1" constant="30" id="YnR-ob-VgS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="1PM-iI-Vbm"/>
+                                    <constraint firstAttribute="height" priority="1" constant="10" id="YnR-ob-VgS"/>
                                 </constraints>
                             </view>
                         </subviews>
