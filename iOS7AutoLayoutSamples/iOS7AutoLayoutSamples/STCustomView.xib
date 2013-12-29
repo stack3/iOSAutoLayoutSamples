@@ -24,7 +24,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eao-1x-fEU">
-                    <rect key="frame" x="48" y="13" width="263" height="21"/>
+                    <rect key="frame" x="48" y="13" width="262" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -36,7 +36,7 @@
                 <constraint firstAttribute="bottom" secondItem="l6Y-qu-GB6" secondAttribute="bottom" constant="8" id="Diy-Wo-Elp"/>
                 <constraint firstAttribute="centerY" secondItem="Eao-1x-fEU" secondAttribute="centerY" id="MR5-Qx-Y8a"/>
                 <constraint firstItem="l6Y-qu-GB6" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="8" id="Sy1-XV-igO"/>
-                <constraint firstAttribute="trailing" secondItem="Eao-1x-fEU" secondAttribute="trailing" constant="9" id="ebH-j7-J2y"/>
+                <constraint firstAttribute="trailing" secondItem="Eao-1x-fEU" secondAttribute="trailing" constant="10" id="ebH-j7-J2y"/>
                 <constraint firstItem="Eao-1x-fEU" firstAttribute="leading" secondItem="l6Y-qu-GB6" secondAttribute="trailing" constant="8" id="oBM-nd-Xfa"/>
                 <constraint firstItem="l6Y-qu-GB6" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="xz7-3G-6Pi"/>
             </constraints>
