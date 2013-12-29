@@ -1,104 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aoa-c9-jZc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jj5-V8-l6f">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Hide View Controller-->
-        <scene sceneID="52d-rH-kTi">
+        <scene sceneID="vci-ff-foj">
             <objects>
-                <viewController id="aoa-c9-jZc" customClass="STHideViewController" sceneMemberID="viewController">
+                <viewController id="jj5-V8-l6f" customClass="STHideViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xg6-YU-odx"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fwd-ea-7mH"/>
+                        <viewControllerLayoutGuide type="top" id="5dJ-Eg-GAk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ms5-xU-gB6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nLs-Rq-X8D">
+                    <view key="view" contentMode="scaleToFill" id="rRD-pD-Pb8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2Z-Bu-5RR">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOf-9V-VyN">
                                 <rect key="frame" x="20" y="40" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODS-qo-XEK">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="hmk-Ru-bOl">
                                 <rect key="frame" x="20" y="69" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Doo-Lj-4B1" userLabel="label2HeightConstraint"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Cn0-pT-TTx" userLabel="label2HeightConstraint"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fj-Yq-BUn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlf-DM-eQi">
                                 <rect key="frame" x="20" y="98" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNJ-cz-Xml">
-                                <rect key="frame" x="20" y="127" width="96" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hod-AZ-6hZ">
+                                <rect key="frame" x="20" y="127" width="107" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Toggle Label2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapToggleHideLabel2Button:" destination="aoa-c9-jZc" eventType="touchUpInside" id="FdT-7S-QEo"/>
+                                    <action selector="didTapToggleHideLabel2Button:" destination="jj5-V8-l6f" eventType="touchUpInside" id="QmZ-9x-IXJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ha-gk-sC1">
-                                <rect key="frame" x="20" y="165" width="204" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYf-2X-Dvr">
+                                <rect key="frame" x="20" y="168" width="228" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Toggle Label2 with Constraint">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapToggleHideLabel2WithConstraintButton:" destination="aoa-c9-jZc" eventType="touchUpInside" id="0Xb-V6-JYv"/>
+                                    <action selector="didTapToggleHideLabel2WithConstraintButton:" destination="jj5-V8-l6f" eventType="touchUpInside" id="g4r-B9-nKx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwc-gK-Jtc">
-                                <rect key="frame" x="20" y="203" width="201" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLy-ax-Abl">
+                                <rect key="frame" x="20" y="209" width="225" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Toggle Label2 with Animation">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapToggleHideLabel2WithAnimationButton:" destination="aoa-c9-jZc" eventType="touchUpInside" id="Y0w-FM-Qmq"/>
+                                    <action selector="didTapToggleHideLabel2WithAnimationButton:" destination="jj5-V8-l6f" eventType="touchUpInside" id="qET-Sl-49R"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3ha-gk-sC1" firstAttribute="top" secondItem="kNJ-cz-Xml" secondAttribute="bottom" constant="8" id="ARB-Le-wab"/>
-                            <constraint firstItem="3ha-gk-sC1" firstAttribute="leading" secondItem="nLs-Rq-X8D" secondAttribute="leading" constant="20" id="DbY-yp-CuC"/>
-                            <constraint firstAttribute="trailing" secondItem="b2Z-Bu-5RR" secondAttribute="trailing" constant="20" id="HNA-sV-9Ce"/>
-                            <constraint firstItem="b2Z-Bu-5RR" firstAttribute="top" secondItem="xg6-YU-odx" secondAttribute="bottom" constant="20" id="IZ4-lT-QPR"/>
-                            <constraint firstItem="ODS-qo-XEK" firstAttribute="top" secondItem="b2Z-Bu-5RR" secondAttribute="bottom" constant="8" id="W7k-I9-QSI" userLabel="label2TopConstraint"/>
-                            <constraint firstItem="b2Z-Bu-5RR" firstAttribute="leading" secondItem="nLs-Rq-X8D" secondAttribute="leading" constant="20" id="Zfd-fb-pbE"/>
-                            <constraint firstAttribute="trailing" secondItem="6fj-Yq-BUn" secondAttribute="trailing" constant="20" id="Zsd-sd-uMG"/>
-                            <constraint firstItem="6fj-Yq-BUn" firstAttribute="top" secondItem="ODS-qo-XEK" secondAttribute="bottom" constant="8" id="eMs-8B-5GC"/>
-                            <constraint firstItem="jwc-gK-Jtc" firstAttribute="top" secondItem="3ha-gk-sC1" secondAttribute="bottom" constant="8" id="eZU-JB-3z5"/>
-                            <constraint firstAttribute="trailing" secondItem="ODS-qo-XEK" secondAttribute="trailing" constant="20" id="pI1-Ig-Nb0"/>
-                            <constraint firstItem="kNJ-cz-Xml" firstAttribute="leading" secondItem="nLs-Rq-X8D" secondAttribute="leading" constant="20" id="stK-v9-gid"/>
-                            <constraint firstItem="jwc-gK-Jtc" firstAttribute="leading" secondItem="nLs-Rq-X8D" secondAttribute="leading" constant="20" id="u1D-4a-NO3"/>
-                            <constraint firstItem="ODS-qo-XEK" firstAttribute="leading" secondItem="nLs-Rq-X8D" secondAttribute="leading" constant="20" id="yUG-Or-eGg"/>
-                            <constraint firstItem="6fj-Yq-BUn" firstAttribute="leading" secondItem="nLs-Rq-X8D" secondAttribute="leading" constant="20" id="yff-4A-Lzk"/>
-                            <constraint firstItem="kNJ-cz-Xml" firstAttribute="top" secondItem="6fj-Yq-BUn" secondAttribute="bottom" constant="8" id="zuS-yc-EGG"/>
+                            <constraint firstItem="hmk-Ru-bOl" firstAttribute="leading" secondItem="rRD-pD-Pb8" secondAttribute="leading" constant="20" id="AOb-Wi-VoH"/>
+                            <constraint firstAttribute="trailing" secondItem="hmk-Ru-bOl" secondAttribute="trailing" constant="20" id="GBh-9s-Bc1"/>
+                            <constraint firstItem="hod-AZ-6hZ" firstAttribute="top" secondItem="vlf-DM-eQi" secondAttribute="bottom" constant="8" id="IId-Pn-mXl"/>
+                            <constraint firstItem="zOf-9V-VyN" firstAttribute="leading" secondItem="rRD-pD-Pb8" secondAttribute="leading" constant="20" id="K4q-Y9-YrB"/>
+                            <constraint firstAttribute="trailing" secondItem="zOf-9V-VyN" secondAttribute="trailing" constant="20" id="Pk4-lW-n2C"/>
+                            <constraint firstItem="xLy-ax-Abl" firstAttribute="leading" secondItem="rRD-pD-Pb8" secondAttribute="leading" constant="20" id="VAU-Th-fYV"/>
+                            <constraint firstItem="UYf-2X-Dvr" firstAttribute="top" secondItem="hod-AZ-6hZ" secondAttribute="bottom" constant="8" id="VbY-K2-aJP"/>
+                            <constraint firstItem="xLy-ax-Abl" firstAttribute="top" secondItem="UYf-2X-Dvr" secondAttribute="bottom" constant="8" id="aa3-8A-I5j"/>
+                            <constraint firstItem="vlf-DM-eQi" firstAttribute="top" secondItem="hmk-Ru-bOl" secondAttribute="bottom" constant="8" id="adW-86-cgP"/>
+                            <constraint firstItem="vlf-DM-eQi" firstAttribute="leading" secondItem="rRD-pD-Pb8" secondAttribute="leading" constant="20" id="crp-PF-yH7"/>
+                            <constraint firstItem="UYf-2X-Dvr" firstAttribute="leading" secondItem="rRD-pD-Pb8" secondAttribute="leading" constant="20" id="f3i-Us-noL"/>
+                            <constraint firstAttribute="trailing" secondItem="vlf-DM-eQi" secondAttribute="trailing" constant="20" id="gT9-9d-Rpc"/>
+                            <constraint firstItem="hmk-Ru-bOl" firstAttribute="top" secondItem="zOf-9V-VyN" secondAttribute="bottom" constant="8" id="iLz-oR-e4e" userLabel="label2TopConstraint"/>
+                            <constraint firstItem="zOf-9V-VyN" firstAttribute="top" secondItem="5dJ-Eg-GAk" secondAttribute="bottom" constant="20" id="wji-Jj-mJ5"/>
+                            <constraint firstItem="hod-AZ-6hZ" firstAttribute="leading" secondItem="rRD-pD-Pb8" secondAttribute="leading" constant="20" id="yKs-WL-KjU"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label2" destination="ODS-qo-XEK" id="Qb3-oX-yBw"/>
-                        <outlet property="label2HeightConstraint" destination="Doo-Lj-4B1" id="E9g-7C-UZa"/>
-                        <outlet property="label2TopConstraint" destination="W7k-I9-QSI" id="tlS-2s-Mil"/>
+                        <outlet property="label2" destination="hmk-Ru-bOl" id="pIB-rH-abH"/>
+                        <outlet property="label2TopConstraint" destination="iLz-oR-e4e" id="edV-aa-LPG"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X3P-jA-l6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rP-ma-YXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="44"/>
+            <point key="canvasLocation" x="98" y="80"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

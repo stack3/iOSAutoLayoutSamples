@@ -14,7 +14,6 @@
 #import "STResizeVerticalViewController.h"
 #import "STFillViewController.h"
 #import "STHideViewController.h"
-#import "STHide2ViewController.h"
 #import "STCustomViewController.h"
 #import "STFlexibleCustomViewController.h"
 #import "STFlexibleTableViewCellViewController.h"
@@ -33,7 +32,6 @@ typedef enum {
     _STMenuItemIndexResizeVertical,
     _STMenuItemIndexFill,
     _STMenuItemIndexHide,
-    _STMenuItemIndexHide2,
     _STMenuItemIndexCustomView,
     _STMenuItemIndexFlexibleCustomView,
     _STMenuItemIndexFlexibleTableViewCell,
@@ -66,7 +64,6 @@ typedef enum {
     [_menuItems addObject:@"Resize Vertical"];
     [_menuItems addObject:@"Fill"];
     [_menuItems addObject:@"Hide"];
-    [_menuItems addObject:@"Hide2"];
     [_menuItems addObject:@"CustomView"];
     [_menuItems addObject:@"Flexible CustomView"];
     [_menuItems addObject:@"Flexible TableViewCell"];
@@ -128,10 +125,6 @@ typedef enum {
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexHide) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STHideViewController" bundle:nil];
-        STResizeVerticalViewController *con = [sb instantiateInitialViewController];
-        [self.navigationController pushViewController:con animated:YES];
-    } else if (indexPath.row == _STMenuItemIndexHide2) {
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STHide2ViewController" bundle:nil];
         STResizeVerticalViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexCustomView) {

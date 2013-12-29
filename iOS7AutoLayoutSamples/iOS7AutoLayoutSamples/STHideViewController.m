@@ -12,7 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label2;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *label2TopConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *label2HeightConstraint;
 
 @end
 
@@ -23,6 +22,7 @@
     [super viewDidLoad];
 
     self.title = @"Hide";
+    _label2.text = @"Label2\nLabel2\nLabel2";
 }
 
 - (IBAction)didTapToggleHideLabel2Button:(id)sender
@@ -35,11 +35,11 @@
     _label2.hidden = !_label2.hidden;
     
     if (_label2.hidden) {
+        _label2.text = nil;
         _label2TopConstraint.constant = 0;
-        _label2HeightConstraint.constant = 0;
     } else {
+        _label2.text = @"Label2\nLabel2\nLabel2";
         _label2TopConstraint.constant = 8;
-        _label2HeightConstraint.constant = 21;
     }
 }
 
@@ -49,11 +49,11 @@
     
     [UIView animateWithDuration:0.3 animations:^{
         if (_label2.hidden) {
+            _label2.text = nil;
             _label2TopConstraint.constant = 0;
-            _label2HeightConstraint.constant = 0;
         } else {
+            _label2.text = @"Label2\nLabel2\nLabel2";
             _label2TopConstraint.constant = 8;
-            _label2HeightConstraint.constant = 21;
         }
         [self.view layoutIfNeeded];
     }];
