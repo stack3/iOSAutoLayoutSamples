@@ -20,19 +20,29 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        _contentView = [[[NSBundle mainBundle] loadNibNamed:@"STFlexibleCustomView" owner:self options:nil] objectAtIndex:0];
-        _contentView.backgroundColor = [UIColor clearColor];
-        _contentView.frame = self.bounds;
-        // Interface Builder already set these autoresizing mask. But set them just in case.
-        _contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
-        [self addSubview:_contentView];
+        [self flexibleCustomViewCommonInit];
     }
     return self;
 }
 
-- (void)awakeFromNib
+- (id)initWithFrame:(CGRect)frame
 {
-    [super awakeFromNib];
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self flexibleCustomViewCommonInit];
+    }
+    return self;
+}
+
+- (void)flexibleCustomViewCommonInit
+{
+    _contentView = [[[NSBundle mainBundle] loadNibNamed:@"STFlexibleCustomView" owner:self options:nil] objectAtIndex:0];
+    _contentView.backgroundColor = [UIColor clearColor];
+    _contentView.frame = self.bounds;
+    // Interface Builder already set these autoresizing mask. But set them just in case.
+    _contentView.translatesAutoresizingMaskIntoConstraints = YES;
+    _contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    [self addSubview:_contentView];
     
     self.backgroundColor = [UIColor grayColor];
     _label1.backgroundColor = [UIColor redColor];
@@ -41,10 +51,11 @@
 
 - (void)layoutSubviews
 {
+    /*
     CGRect bounds = self.bounds;
     _label1.preferredMaxLayoutWidth = bounds.size.width - 20*2;
     _label2.preferredMaxLayoutWidth = bounds.size.width - 20*2;
-
+     */
     [super layoutSubviews];
 }
 

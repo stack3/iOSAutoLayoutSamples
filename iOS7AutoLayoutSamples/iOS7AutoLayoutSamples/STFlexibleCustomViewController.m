@@ -21,13 +21,14 @@
 {
     [super viewDidLoad];
 
-    self.title = @"Resize Custom View";
+    self.title = @"Flexible Custom View";
 }
 
 - (IBAction)didTapResize:(id)sender
 {
     _customView.label1.text = @"12345678901234567890123456789012345678901234567890";
     _customView.label2.text = @"1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+    // Not necessary. Just in case.
     [self.view setNeedsLayout];
 }
 
