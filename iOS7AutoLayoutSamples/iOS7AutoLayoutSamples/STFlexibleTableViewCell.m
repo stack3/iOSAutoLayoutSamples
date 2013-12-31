@@ -16,17 +16,14 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
-- (void)setFrame:(CGRect)frame
+- (void)layoutSubviews
 {
-    [super setFrame:frame];
-
-    // Labels is not connected yet.
-    if (_label1 == nil) return;
-    
     CGRect bounds = self.bounds;
     _label1.preferredMaxLayoutWidth = bounds.size.width - 20*2;
     _label2.preferredMaxLayoutWidth = bounds.size.width - 20*2;
     _label3.preferredMaxLayoutWidth = bounds.size.width - 20*2;
+    
+    [super layoutSubviews];
 }
 
 - (void)setLabelTextsWithIndexPath:(NSIndexPath *)indexPath
