@@ -17,6 +17,7 @@
 #import "STCustomViewController.h"
 #import "STFlexibleCustomViewController.h"
 #import "STFlexibleTableViewCellViewController.h"
+#import "STVerticalScrollViewController.h"
 
 @interface STMainViewController ()
 
@@ -35,6 +36,7 @@ typedef enum {
     _STMenuItemIndexCustomView,
     _STMenuItemIndexFlexibleCustomView,
     _STMenuItemIndexFlexibleTableViewCell,
+    _STMenuItemVerticalScrollView
 } _STMenuItemIndex;
 
 @interface STMainViewController()
@@ -67,6 +69,7 @@ typedef enum {
     [_menuItems addObject:@"CustomView"];
     [_menuItems addObject:@"Flexible CustomView"];
     [_menuItems addObject:@"Flexible TableViewCell"];
+    [_menuItems addObject:@"Vertical ScrollView"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -138,6 +141,10 @@ typedef enum {
     } else if (indexPath.row == _STMenuItemIndexFlexibleTableViewCell) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFlexibleTableViewCellViewController" bundle:nil];
         STFlexibleTableViewCellViewController *con = [sb instantiateInitialViewController];
+        [self.navigationController pushViewController:con animated:YES];
+    } else if (indexPath.row == _STMenuItemVerticalScrollView) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STVerticalScrollViewController" bundle:nil];
+        STVerticalScrollViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     }
 }

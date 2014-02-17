@@ -11,5 +11,6 @@
 @interface UIView (ST)
 
 + (instancetype)st_loadFromNib;
+- (UIView *)st_loadAndAddContentViewFromNibNamed:(NSString *)nibNamed;
 
 @end
