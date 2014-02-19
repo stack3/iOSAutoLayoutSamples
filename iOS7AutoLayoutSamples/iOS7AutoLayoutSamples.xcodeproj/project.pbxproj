@@ -42,9 +42,9 @@
 		B765F85A181CCF4B00994A54 /* STCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B765F859181CCF4B00994A54 /* STCustomView.m */; };
 		B7CAF37F18B1AAD20007C178 /* STVerticalScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAF37E18B1AAD20007C178 /* STVerticalScrollViewController.m */; };
 		B7CAF38118B1AAE50007C178 /* STVerticalScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CAF38018B1AAE50007C178 /* STVerticalScrollViewController.storyboard */; };
-		B7CAF38418B1AD4E0007C178 /* STVerticalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAF38318B1AD4E0007C178 /* STVerticalScrollView.m */; };
 		B7CAF38618B1B4B00007C178 /* STVerticalScrollContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CAF38518B1B4B00007C178 /* STVerticalScrollContentView.xib */; };
 		B7CAF38918B1B4C40007C178 /* STVerticalScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAF38818B1B4C40007C178 /* STVerticalScrollContentView.m */; };
+		B7CAF39A18B45B0D0007C178 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CAF39918B45B0D0007C178 /* MapKit.framework */; };
 		B7F9977F181FE6F100860B29 /* STFlexibleCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F9977D181FE6F100860B29 /* STFlexibleCustomViewController.m */; };
 		B7F99783181FE77200860B29 /* STFlexibleCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F99782181FE77200860B29 /* STFlexibleCustomView.m */; };
 		B7F99785181FE8EF00860B29 /* STFlexibleCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F99784181FE8EF00860B29 /* STFlexibleCustomView.xib */; };
@@ -118,11 +118,10 @@
 		B7CAF37D18B1AAD20007C178 /* STVerticalScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVerticalScrollViewController.h; sourceTree = "<group>"; };
 		B7CAF37E18B1AAD20007C178 /* STVerticalScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVerticalScrollViewController.m; sourceTree = "<group>"; };
 		B7CAF38018B1AAE50007C178 /* STVerticalScrollViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STVerticalScrollViewController.storyboard; sourceTree = "<group>"; };
-		B7CAF38218B1AD4E0007C178 /* STVerticalScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVerticalScrollView.h; sourceTree = "<group>"; };
-		B7CAF38318B1AD4E0007C178 /* STVerticalScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVerticalScrollView.m; sourceTree = "<group>"; };
 		B7CAF38518B1B4B00007C178 /* STVerticalScrollContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STVerticalScrollContentView.xib; sourceTree = "<group>"; };
 		B7CAF38718B1B4C40007C178 /* STVerticalScrollContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVerticalScrollContentView.h; sourceTree = "<group>"; };
 		B7CAF38818B1B4C40007C178 /* STVerticalScrollContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVerticalScrollContentView.m; sourceTree = "<group>"; };
+		B7CAF39918B45B0D0007C178 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B7F9977C181FE6F100860B29 /* STFlexibleCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlexibleCustomViewController.h; sourceTree = "<group>"; };
 		B7F9977D181FE6F100860B29 /* STFlexibleCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFlexibleCustomViewController.m; sourceTree = "<group>"; };
 		B7F99781181FE77200860B29 /* STFlexibleCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlexibleCustomView.h; sourceTree = "<group>"; };
@@ -148,6 +147,7 @@
 			files = (
 				B741F95817F6C4EB0018EA28 /* CoreGraphics.framework in Frameworks */,
 				B741F95A17F6C4EB0018EA28 /* UIKit.framework in Frameworks */,
+				B7CAF39A18B45B0D0007C178 /* MapKit.framework in Frameworks */,
 				B741F95617F6C4EB0018EA28 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +187,7 @@
 		B741F95417F6C4EB0018EA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7CAF39918B45B0D0007C178 /* MapKit.framework */,
 				B741F95517F6C4EB0018EA28 /* Foundation.framework */,
 				B741F95717F6C4EB0018EA28 /* CoreGraphics.framework */,
 				B741F95917F6C4EB0018EA28 /* UIKit.framework */,
@@ -249,8 +250,6 @@
 				B7CAF37D18B1AAD20007C178 /* STVerticalScrollViewController.h */,
 				B7CAF37E18B1AAD20007C178 /* STVerticalScrollViewController.m */,
 				B7CAF38018B1AAE50007C178 /* STVerticalScrollViewController.storyboard */,
-				B7CAF38218B1AD4E0007C178 /* STVerticalScrollView.h */,
-				B7CAF38318B1AD4E0007C178 /* STVerticalScrollView.m */,
 				B7CAF38718B1B4C40007C178 /* STVerticalScrollContentView.h */,
 				B7CAF38818B1B4C40007C178 /* STVerticalScrollContentView.m */,
 				B7CAF38518B1B4B00007C178 /* STVerticalScrollContentView.xib */,
@@ -346,6 +345,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = stack3;
 				TargetAttributes = {
+					B741F95117F6C4EB0018EA28 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					B741F97217F6C4EB0018EA28 = {
 						TestTargetID = B741F95117F6C4EB0018EA28;
 					};
@@ -412,7 +418,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CAF38418B1AD4E0007C178 /* STVerticalScrollView.m in Sources */,
 				B7F99795181FF9D000860B29 /* STFlexibleTableViewCell.m in Sources */,
 				B74BD98A180AB24000631AE9 /* STResizeVerticalViewController.m in Sources */,
 				B741F99817F6DB3C0018EA28 /* STResizeLabelViewController.m in Sources */,
