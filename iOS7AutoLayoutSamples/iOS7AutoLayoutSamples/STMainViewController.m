@@ -18,6 +18,7 @@
 #import "STFlexibleCustomViewController.h"
 #import "STFlexibleTableViewCellViewController.h"
 #import "STVerticalScrollViewController.h"
+#import "STLargeImageScrollViewController.h"
 
 @interface STMainViewController ()
 
@@ -36,6 +37,7 @@ typedef enum {
     _STMenuItemIndexCustomView,
     _STMenuItemIndexFlexibleCustomView,
     _STMenuItemIndexFlexibleTableViewCell,
+    _STMenuItemLargeImageScrollView,
     _STMenuItemVerticalScrollView
 } _STMenuItemIndex;
 
@@ -69,6 +71,7 @@ typedef enum {
     [_menuItems addObject:@"CustomView"];
     [_menuItems addObject:@"Flexible CustomView"];
     [_menuItems addObject:@"Flexible TableViewCell"];
+    [_menuItems addObject:@"Large Image ScrollView"];
     [_menuItems addObject:@"Vertical ScrollView"];
 }
 
@@ -141,6 +144,10 @@ typedef enum {
     } else if (indexPath.row == _STMenuItemIndexFlexibleTableViewCell) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFlexibleTableViewCellViewController" bundle:nil];
         STFlexibleTableViewCellViewController *con = [sb instantiateInitialViewController];
+        [self.navigationController pushViewController:con animated:YES];
+    } else if (indexPath.row == _STMenuItemLargeImageScrollView) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STLargeImageScrollViewController" bundle:nil];
+        STLargeImageScrollViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemVerticalScrollView) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STVerticalScrollViewController" bundle:nil];

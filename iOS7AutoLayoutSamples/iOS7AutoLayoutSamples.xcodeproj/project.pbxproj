@@ -45,6 +45,9 @@
 		B7CAF38618B1B4B00007C178 /* STVerticalScrollContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CAF38518B1B4B00007C178 /* STVerticalScrollContentView.xib */; };
 		B7CAF38918B1B4C40007C178 /* STVerticalScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAF38818B1B4C40007C178 /* STVerticalScrollContentView.m */; };
 		B7CAF39A18B45B0D0007C178 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CAF39918B45B0D0007C178 /* MapKit.framework */; };
+		B7CAF39F18B497020007C178 /* STLargeImageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAF39E18B497020007C178 /* STLargeImageScrollViewController.m */; };
+		B7CAF3A118B497190007C178 /* STLargeImageScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CAF3A018B497190007C178 /* STLargeImageScrollViewController.storyboard */; };
+		B7CAF3A318B49C100007C178 /* large-image-01.png in Resources */ = {isa = PBXBuildFile; fileRef = B7CAF3A218B49C100007C178 /* large-image-01.png */; };
 		B7F9977F181FE6F100860B29 /* STFlexibleCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F9977D181FE6F100860B29 /* STFlexibleCustomViewController.m */; };
 		B7F99783181FE77200860B29 /* STFlexibleCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F99782181FE77200860B29 /* STFlexibleCustomView.m */; };
 		B7F99785181FE8EF00860B29 /* STFlexibleCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F99784181FE8EF00860B29 /* STFlexibleCustomView.xib */; };
@@ -122,6 +125,10 @@
 		B7CAF38718B1B4C40007C178 /* STVerticalScrollContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVerticalScrollContentView.h; sourceTree = "<group>"; };
 		B7CAF38818B1B4C40007C178 /* STVerticalScrollContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVerticalScrollContentView.m; sourceTree = "<group>"; };
 		B7CAF39918B45B0D0007C178 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B7CAF39D18B497020007C178 /* STLargeImageScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLargeImageScrollViewController.h; sourceTree = "<group>"; };
+		B7CAF39E18B497020007C178 /* STLargeImageScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLargeImageScrollViewController.m; sourceTree = "<group>"; };
+		B7CAF3A018B497190007C178 /* STLargeImageScrollViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STLargeImageScrollViewController.storyboard; sourceTree = "<group>"; };
+		B7CAF3A218B49C100007C178 /* large-image-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "large-image-01.png"; sourceTree = "<group>"; };
 		B7F9977C181FE6F100860B29 /* STFlexibleCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlexibleCustomViewController.h; sourceTree = "<group>"; };
 		B7F9977D181FE6F100860B29 /* STFlexibleCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFlexibleCustomViewController.m; sourceTree = "<group>"; };
 		B7F99781181FE77200860B29 /* STFlexibleCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlexibleCustomView.h; sourceTree = "<group>"; };
@@ -247,6 +254,9 @@
 				B7F99793181FF9D000860B29 /* STFlexibleTableViewCell.h */,
 				B7F99794181FF9D000860B29 /* STFlexibleTableViewCell.m */,
 				B7F99796181FFA1800860B29 /* STFlexibleTableViewCell.xib */,
+				B7CAF39D18B497020007C178 /* STLargeImageScrollViewController.h */,
+				B7CAF39E18B497020007C178 /* STLargeImageScrollViewController.m */,
+				B7CAF3A018B497190007C178 /* STLargeImageScrollViewController.storyboard */,
 				B7CAF37D18B1AAD20007C178 /* STVerticalScrollViewController.h */,
 				B7CAF37E18B1AAD20007C178 /* STVerticalScrollViewController.m */,
 				B7CAF38018B1AAE50007C178 /* STVerticalScrollViewController.storyboard */,
@@ -293,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				B74BED28186803DA00327A33 /* stack3.png */,
+				B7CAF3A218B49C100007C178 /* large-image-01.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -384,6 +395,7 @@
 				B74BED261868003000327A33 /* STCustomView.xib in Resources */,
 				B74277761827435D00128E85 /* STHideViewController.storyboard in Resources */,
 				B7F99799182014C000860B29 /* STFlexibleCustomViewController.storyboard in Resources */,
+				B7CAF3A318B49C100007C178 /* large-image-01.png in Resources */,
 				B74277781827444800128E85 /* STCustomViewController.storyboard in Resources */,
 				B741F96E17F6C4EB0018EA28 /* Images.xcassets in Resources */,
 				B74277681826102100128E85 /* STCenteringViewController.storyboard in Resources */,
@@ -398,6 +410,7 @@
 				B74BED29186803DA00327A33 /* stack3.png in Resources */,
 				B742776A1826115F00128E85 /* STResizeLabelViewController.storyboard in Resources */,
 				B7CAF38618B1B4B00007C178 /* STVerticalScrollContentView.xib in Resources */,
+				B7CAF3A118B497190007C178 /* STLargeImageScrollViewController.storyboard in Resources */,
 				B7F99797181FFA1800860B29 /* STFlexibleTableViewCell.xib in Resources */,
 				B74277721827421800128E85 /* STFillViewController.storyboard in Resources */,
 			);
@@ -435,6 +448,7 @@
 				B765F856181CCF3B00994A54 /* STCustomViewController.m in Sources */,
 				B7CAF37F18B1AAD20007C178 /* STVerticalScrollViewController.m in Sources */,
 				B7F9977F181FE6F100860B29 /* STFlexibleCustomViewController.m in Sources */,
+				B7CAF39F18B497020007C178 /* STLargeImageScrollViewController.m in Sources */,
 				B7F9978D181FF03100860B29 /* STFlexibleTableViewCellViewController.m in Sources */,
 				B7F99783181FE77200860B29 /* STFlexibleCustomView.m in Sources */,
 				B765D42A181CA4FB0058B933 /* STFillViewController.m in Sources */,
