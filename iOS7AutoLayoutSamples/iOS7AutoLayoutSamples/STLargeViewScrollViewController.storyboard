@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fgO-w3-o5Y">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Large View Scroll View Controller-->
+        <scene sceneID="QGz-SB-S9J">
+            <objects>
+                <viewController id="fgO-w3-o5Y" customClass="STLargeViewScrollViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SdM-Zp-hum"/>
+                        <viewControllerLayoutGuide type="bottom" id="YYN-hs-2s4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nk1-I7-DPH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhG-NG-sk0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YYN-hs-2s4" firstAttribute="top" secondItem="UhG-NG-sk0" secondAttribute="bottom" id="0Hz-gh-oxb"/>
+                            <constraint firstAttribute="trailing" secondItem="UhG-NG-sk0" secondAttribute="trailing" id="B7e-Fa-cjX"/>
+                            <constraint firstItem="UhG-NG-sk0" firstAttribute="leading" secondItem="nk1-I7-DPH" secondAttribute="leading" id="MHR-IX-Huw"/>
+                            <constraint firstItem="UhG-NG-sk0" firstAttribute="top" secondItem="nk1-I7-DPH" secondAttribute="top" id="nGh-Sb-G45"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="UhG-NG-sk0" id="tdF-d8-6qz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yk-Kd-bUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="56"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
