@@ -11,6 +11,7 @@
 
 @interface STVerticalScrollContentView ()
 
+@property (weak, nonatomic) UIView *contentView;
 @property (nonatomic) CGSize layoutSize;
 
 @end
@@ -39,7 +40,7 @@
 
 - (void)verticalScrollContentViewCommonInit
 {
-    [self st_loadAndAddContentViewFromNibNamed:@"STVerticalScrollContentView"];
+    _contentView = [self st_loadAndAddContentViewFromNibNamed:@"STVerticalScrollContentView"];
 }
 
 - (void)invalidateIntrinsicContentSize
@@ -47,13 +48,15 @@
     CGSize superviewSize = self.superview.bounds.size;
     _layoutSize.width = superviewSize.width;
     _textLabel.preferredMaxLayoutWidth = _layoutSize.width - 20*2;
-    _layoutSize.height = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    _layoutSize.height = [_contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     
     [super invalidateIntrinsicContentSize];
 }
 
 - (CGSize)intrinsicContentSize
 {
+    // DO NOT call systemLayoutSizeFittingSize here.
+    
     return CGSizeMake(_layoutSize.width, _layoutSize.height);
 }
 
