@@ -29,6 +29,7 @@
     NSLog(@"ImageView intrinsicContentSize:%@", NSStringFromCGSize(imageView.intrinsicContentSize));
     [_scrollView addSubview:imageView];
     
+#if 1
     NSDictionary *viewDictionary = NSDictionaryOfVariableBindings(imageView);
     [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|"
                                                                         options:0
@@ -38,6 +39,36 @@
                                                                         options:0
                                                                         metrics:nil
                                                                           views:viewDictionary]];
+#else
+    [_scrollView addConstraint:[NSLayoutConstraint constraintWithItem:imageView
+                                                            attribute:NSLayoutAttributeLeading
+                                                            relatedBy:NSLayoutRelationEqual
+                                                               toItem:_scrollView
+                                                            attribute:NSLayoutAttributeLeading
+                                                           multiplier:1.0f
+                                                             constant:0]];
+    [_scrollView addConstraint:[NSLayoutConstraint constraintWithItem:imageView
+                                                            attribute:NSLayoutAttributeTrailing
+                                                            relatedBy:NSLayoutRelationEqual
+                                                               toItem:_scrollView
+                                                            attribute:NSLayoutAttributeTrailing
+                                                           multiplier:1.0f
+                                                             constant:0]];
+    [_scrollView addConstraint:[NSLayoutConstraint constraintWithItem:imageView
+                                                            attribute:NSLayoutAttributeTop
+                                                            relatedBy:NSLayoutRelationEqual
+                                                               toItem:_scrollView
+                                                            attribute:NSLayoutAttributeTop
+                                                           multiplier:1.0f
+                                                             constant:0]];
+    [_scrollView addConstraint:[NSLayoutConstraint constraintWithItem:imageView
+                                                            attribute:NSLayoutAttributeBottom
+                                                            relatedBy:NSLayoutRelationEqual
+                                                               toItem:_scrollView
+                                                            attribute:NSLayoutAttributeBottom
+                                                           multiplier:1.0f
+                                                             constant:0]];
+#endif
 }
 
 - (void)didReceiveMemoryWarning
