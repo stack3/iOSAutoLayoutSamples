@@ -44,14 +44,13 @@
     _contentView = [self st_loadAndAddContentViewFromNibNamed:@"STVerticalScrollContentView"];
 }
 
-- (void)invalidateIntrinsicContentSize
+- (void)setLayoutWidth:(CGFloat)width
 {
-    CGSize superviewSize = self.superview.bounds.size;
-    _layoutSize.width = superviewSize.width;
+    _layoutSize.width = width;
     _textLabel.preferredMaxLayoutWidth = _layoutSize.width - 20*2;
     _layoutSize.height = [_contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     
-    [super invalidateIntrinsicContentSize];
+    [self invalidateIntrinsicContentSize];
 }
 
 - (CGSize)intrinsicContentSize

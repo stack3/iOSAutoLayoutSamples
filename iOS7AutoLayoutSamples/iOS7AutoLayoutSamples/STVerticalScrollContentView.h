@@ -13,4 +13,9 @@
 @property (weak, nonatomic, readonly) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic, readonly) IBOutlet UILabel *textLabel;
 
+/**
+ * レイアウト幅を設定する。
+ */
+- (void)setLayoutWidth:(CGFloat)width;
+
 @end
