@@ -18,6 +18,7 @@
 
 @implementation STVerticalScrollContentView
 
+@synthesize imageView = _imageView;
 @synthesize textLabel = _textLabel;
 
 - (id)initWithFrame:(CGRect)frame

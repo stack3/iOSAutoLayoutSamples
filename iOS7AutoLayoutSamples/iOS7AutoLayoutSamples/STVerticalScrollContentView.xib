@@ -6,38 +6,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STVerticalScrollContentView">
             <connections>
+                <outlet property="imageView" destination="yIC-IF-jv0" id="IFV-SD-0zS"/>
                 <outlet property="textLabel" destination="ZvN-S3-TGL" id="SGy-6q-FGn"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="471"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ZvN-S3-TGL">
-                    <rect key="frame" x="20" y="156" width="280" height="21"/>
+                    <rect key="frame" x="20" y="178" width="280" height="273"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hE7-Xq-gEH">
-                    <rect key="frame" x="20" y="20" width="280" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-IF-jv0">
+                    <rect key="frame" x="85" y="20" width="150" height="150"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="128" id="3yB-Yr-TUg"/>
+                        <constraint firstAttribute="width" constant="150" id="4U2-5A-WC5"/>
+                        <constraint firstAttribute="height" constant="150" id="WKe-hB-uWp"/>
                     </constraints>
-                </mapView>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="ZvN-S3-TGL" secondAttribute="bottom" constant="20" id="Czo-wV-edW"/>
-                <constraint firstItem="ZvN-S3-TGL" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="E6T-cW-wDE"/>
+                <constraint firstItem="ZvN-S3-TGL" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="9ts-0u-qNt"/>
+                <constraint firstItem="yIC-IF-jv0" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" id="ISq-np-8mi"/>
+                <constraint firstAttribute="bottom" secondItem="ZvN-S3-TGL" secondAttribute="bottom" constant="20" id="ag7-gc-S8M"/>
                 <constraint firstAttribute="trailing" secondItem="ZvN-S3-TGL" secondAttribute="trailing" constant="20" id="k6n-kN-8vu"/>
-                <constraint firstItem="ZvN-S3-TGL" firstAttribute="top" secondItem="hE7-Xq-gEH" secondAttribute="bottom" constant="8" id="nB6-e1-3oG"/>
-                <constraint firstItem="hE7-Xq-gEH" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="nbV-KX-C5N"/>
-                <constraint firstItem="hE7-Xq-gEH" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" id="qpu-c3-NjZ"/>
-                <constraint firstAttribute="trailing" secondItem="hE7-Xq-gEH" secondAttribute="trailing" constant="20" id="w3M-yO-kSl"/>
+                <constraint firstItem="ZvN-S3-TGL" firstAttribute="top" secondItem="yIC-IF-jv0" secondAttribute="bottom" constant="8" id="vai-X2-ntu"/>
+                <constraint firstAttribute="centerX" secondItem="yIC-IF-jv0" secondAttribute="centerX" id="zKr-nL-AXw"/>
             </constraints>
         </view>
     </objects>

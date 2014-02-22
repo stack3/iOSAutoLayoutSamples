@@ -10,6 +10,7 @@
 
 @interface STVerticalScrollContentView : UIView
 
+@property (weak, nonatomic, readonly) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic, readonly) IBOutlet UILabel *textLabel;
 
 @end

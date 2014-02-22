@@ -66,8 +66,6 @@
 #else
     //
     // If you want to use Visual Format Language.
-    // But I do not recommend this. Because if you changed variable name, you need to change visual format string too.
-    // And complier does not detect the changes.
     //
     NSDictionary *viewDict = NSDictionaryOfVariableBindings(_contentView);
     [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_contentView]|"
@@ -79,13 +77,11 @@
                                                                         metrics:nil
                                                                           views:viewDict]];
 #endif
+ 
+    _contentView.imageView.image = [UIImage imageNamed:@"image-300"];
     
     NSMutableString *string = [[NSMutableString alloc] initWithCapacity:1000];
-    [string appendString:@"--- BEGIN\n"];
-    for (int i = 0; i < 10; i++) {
-        [string appendString:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."];
-    }
-    [string appendString:@"\n--- END"];
+    [string appendString:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."];
     _contentView.textLabel.text = string;
 }
 
