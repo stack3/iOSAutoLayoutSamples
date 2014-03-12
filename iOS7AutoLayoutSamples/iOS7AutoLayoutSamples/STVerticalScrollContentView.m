@@ -49,6 +49,9 @@
     _layoutSize.width = width;
     _textLabel.preferredMaxLayoutWidth = _layoutSize.width - 20*2;
     _layoutSize.height = [_contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    // It's important to round the height.
+    // If the value was including decimal point like 300.5, the ScrollView might not bounce.
+    _layoutSize.height = round(_layoutSize.height);
     
     [self invalidateIntrinsicContentSize];
 }
